@@ -133,9 +133,16 @@
   </div>
 
   <!-- ================= HERO ================= -->
-  <section class="hero" id="inicio" data-tone="dark">
-    <canvas id="neural" aria-hidden="true"></canvas>
-    <div class="hero-veil" aria-hidden="true"></div>
+  <section class="hero hero-cine" id="inicio" data-tone="dark">
+
+    <!-- Escena. El fondo estático ya es una composición cerrada:
+         si la 3D no carga, el hero sigue siendo el hero. -->
+    <div class="hero-stage" aria-hidden="true">
+      <div class="hero-bg"></div>
+      <canvas id="heroScene"></canvas>
+      <div class="hero-veil"></div>
+      <div class="hero-vignette"></div>
+    </div>
 
     <div class="wrap">
       <div class="hero-grid">
@@ -143,85 +150,47 @@
         <div class="hero-copy">
           <span class="eyebrow rv">Soluciones operativas · Automatización · IA</span>
 
-          <h1 data-split>Deja de pagar<br>con tiempo por<br><span class="grad-text">trabajo repetitivo.</span></h1>
+          <!-- Sin marcado dentro de [data-split]: el splitter de
+               main.js parte por espacios y rompería las etiquetas.
+               El degradado lo aplica el CSS sobre la última línea. -->
+          <h1 data-split>Automatizamos<br>lo que frena<br>tu negocio.</h1>
 
-          <p class="hero-kick rv" style="--d:420ms">
-            Tu equipo debería resolver problemas, no mover información.
+          <p class="lead rv" style="--d:480ms">
+            Construimos soluciones digitales y automatizaciones adaptadas a tu operación.
           </p>
 
-          <p class="lead rv" style="--d:520ms">
-            Diseñamos flujos que conectan tus sistemas, ejecutan tareas repetitivas,
-            detectan excepciones y dejan a tu equipo lo que realmente necesita criterio.
-          </p>
-
-          <div class="hero-cta rv" style="--d:620ms">
-            <a class="btn btn-primary btn-lg" data-magnet data-wa-topic="una oportunidad de automatización"
-              href="https://wa.me/573249192451"
+          <div class="hero-cta rv" style="--d:600ms">
+            <a class="btn btn-primary btn-lg" data-magnet
+              data-wa-topic="automatizar mi operación"
+              href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20quiero%20hablar%20sobre%20automatizar%20mi%20operaci%C3%B3n"
               target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
-              Hablar de mi operación
+              Hablar con nosotros
             </a>
-            <a class="btn btn-ghost btn-lg" href="#cotizador">
-              Encontrar mi oportunidad
+            <a class="btn btn-ghost btn-lg" href="#servicios">
+              Ver soluciones
               <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
           </div>
 
-          <div class="hero-proof hero-principles rv" style="--d:720ms">
+          <div class="hero-proof hero-principles rv" style="--d:760ms">
             <div class="proof"><b>01</b><span>Detectamos cuellos de botella</span></div>
             <div class="proof"><b>02</b><span>Conectamos lo que ya utilizas</span></div>
             <div class="proof"><b>03</b><span>Medimos el resultado después de implementar</span></div>
           </div>
         </div>
-        </div>
 
-        <div class="hero-visual rv rv-zoom" style="--d:300ms">
-          <div class="term-stack">
-            <div class="term tilt" data-tilt="5">
-              <div class="term-bar">
-                <i></i><i></i><i></i>
-                <b>autflow · flujo-operativo.run</b>
-                <span class="term-live">ejemplo</span>
-              </div>
-              <div class="term-body" id="termBody"></div>
-              <div class="term-foot">
-                <div>
-                  <div class="tf-k">Tiempo manual</div>
-                  <div class="tf-v" style="color:#61718c;text-decoration:line-through">manual</div>
-                </div>
-                <div class="tf-sep"></div>
-                <div>
-                  <div class="tf-k">Con AutFlow</div>
-                  <div class="tf-v">automático</div>
-                </div>
-                <div class="tf-sep"></div>
-                <div>
-                  <div class="tf-k">Intervención</div>
-                  <div class="tf-v">según reglas</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="float float-a">
-              <div class="fk">Diseñado para la operación</div>
-              <div class="fv">IA + flujos</div>
-              <div class="fs">con control de excepciones</div>
-            </div>
-            <a class="term-cta" href="#cotizador">
-              <span class="tc-ic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="3"/><path d="M8 7h8M8 11h3M8 15h3M15 11v5M13 13.5h4"/></svg>
-              </span>
-              <span class="tc-tx">
-                <b>¿Tienes un proceso en mente?</b>
-                <span>Cuéntanos el problema y te orientamos</span>
-              </span>
-              <svg class="arr tc-ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-        </div>
+        <!-- Columna derecha: reserva el espacio del robot para que
+             el texto nunca se le monte encima. -->
+        <div class="hero-visual" aria-hidden="true"></div>
 
       </div>
     </div>
+
+    <a class="scroll-cue" href="#solucion" aria-label="Ir a la siguiente sección">
+      <span>Desliza</span>
+      <i aria-hidden="true"></i>
+    </a>
 
   </section>
 
@@ -1069,6 +1038,9 @@
   </a>
 
   <script src="js/main.js" defer></script>
+  <!-- Escena del hero: modulo ES, se evalua despues del primer render
+       y solo descarga three.js si el dispositivo lo justifica. -->
+  <script src="js/hero-boot.js" type="module"></script>
 </body>
 
 </html>
