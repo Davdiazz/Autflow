@@ -1959,3 +1959,227 @@ html[data-cursor-tone="light"] .cur-label{ color:#fff; }
 /* ===== AutFlow v3 — cliente primero ===== */
 .price-note{margin:0 auto 1.8rem;max-width:900px;padding:1rem 1.2rem;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.035);color:#aeb9cc;text-align:center;font-size:.92rem;line-height:1.6}.price-note b{color:#fff}
 .af-fit{padding-top:0}.fit-box{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;padding:clamp(1.6rem,4vw,2.8rem);border:1px solid rgba(17,25,39,.1);border-radius:24px;background:linear-gradient(135deg,#f7f9fc,#eef3f8)}.fit-box h3{font-size:clamp(1.7rem,3vw,2.8rem);line-height:1.08;margin:.7rem 0 0}.fit-list{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}.fit-list span{padding:.8rem .9rem;border-radius:12px;background:#fff;border:1px solid rgba(17,25,39,.08);font-size:.92rem;font-weight:600;color:#263247}.fit-list span::first-letter{color:#16a36a}@media(max-width:760px){.fit-box{grid-template-columns:1fr}.fit-list{grid-template-columns:1fr}}
+
+/* ============================================================
+   30. Hero cinematográfico
+   ------------------------------------------------------------
+   Añadido, no sustituye a la sección 12: reutiliza .hero,
+   .hero-grid, .hero-copy, .btn y los reveals. Sólo se define
+   aquí lo que la escena necesita.
+   ============================================================ */
+
+.hero-cine{
+  /* La escena ocupa el hero entero; el contenido va por encima. */
+  isolation:isolate;
+  background:#05070f;
+}
+
+/* ---------- Escenario ---------- */
+.hero-stage{
+  position:absolute; inset:0; z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+/* Fondo estático. Es la composición de respaldo completa:
+   con movimiento reducido, sin WebGL o mientras three.js
+   descarga, el hero ya se ve terminado. */
+.hero-bg{
+  position:absolute; inset:0;
+  background:
+    /* halo frío tras el robot, lado derecho */
+    radial-gradient(ellipse 46% 52% at 72% 42%, rgba(63,198,245,.22), transparent 66%),
+    /* rebote azul profundo bajo el texto */
+    radial-gradient(ellipse 52% 46% at 14% 68%, rgba(36,64,255,.2), transparent 68%),
+    /* contraluz alto */
+    radial-gradient(ellipse 70% 40% at 82% 4%, rgba(123,92,255,.14), transparent 70%),
+    #05070f;
+  transition:opacity 1.1s var(--ease-out);
+}
+
+/* Malla técnica muy tenue: da escala al plano sin dibujar nada. */
+.hero-bg::after{
+  content:"";
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size:clamp(46px,5vw,74px) clamp(46px,5vw,74px);
+  -webkit-mask-image:radial-gradient(ellipse 72% 62% at 50% 38%, #000 18%, transparent 78%);
+          mask-image:radial-gradient(ellipse 72% 62% at 50% 38%, #000 18%, transparent 78%);
+  opacity:.5;
+}
+
+#heroScene{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  display:block;
+  opacity:0;
+  transition:opacity 1.4s var(--ease-out);
+}
+/* La añade hero-boot.js cuando la escena ya está montada:
+   el canvas nunca aparece en negro. */
+.hero-3d-on #heroScene{ opacity:1; }
+.hero-3d-on .hero-bg::after{ opacity:.32; }
+
+/* ---------- Integración ---------- */
+/* Funde la base de la escena con el fondo de la página para que
+   el robot no termine en un borde: es lo que evita la sensación
+   de imagen pegada. */
+.hero-cine .hero-veil{
+  position:absolute; inset:0; z-index:2;
+  background:
+    linear-gradient(180deg, rgba(5,7,15,.72) 0%, transparent 22%),
+    linear-gradient(180deg, transparent 62%, rgba(5,7,15,.86) 88%, #05070f 100%);
+}
+
+/* Viñeta: cierra las esquinas y empuja la mirada al centro. */
+.hero-vignette{
+  position:absolute; inset:0; z-index:3;
+  background:radial-gradient(ellipse 96% 86% at 50% 44%, transparent 42%, rgba(3,5,11,.72) 100%);
+}
+
+/* En escritorio, un degradado extra protege la legibilidad del
+   texto sobre el lado izquierdo de la escena. */
+@media (min-width:861px){
+  .hero-cine .hero-veil{
+    background:
+      linear-gradient(180deg, rgba(5,7,15,.72) 0%, transparent 22%),
+      linear-gradient(90deg, rgba(5,7,15,.9) 0%, rgba(5,7,15,.58) 34%, transparent 58%),
+      linear-gradient(180deg, transparent 64%, rgba(5,7,15,.84) 90%, #05070f 100%);
+  }
+}
+
+/* ---------- Contenido ---------- */
+.hero-cine .wrap{ position:relative; z-index:4; }
+.hero-cine .hero-grid{ align-items:center; }
+
+/* Columna derecha vacía: sólo reserva el sitio del robot. */
+.hero-cine .hero-visual{
+  min-height:clamp(380px,46vw,560px);
+  pointer-events:none;
+}
+
+.hero-cine .hero-copy{ max-width:34rem; }
+.hero-cine .hero-copy h1{
+  /* Ajustado a la palabra mas larga del titular
+     ("Automatizamos"): por encima de esto .split .ln, que
+     lleva overflow:hidden para la animacion, recorta la
+     ultima letra. */
+  font-size:clamp(2.3rem, 1.1rem + 3.9vw, 4.05rem);
+  line-height:1.0;
+  letter-spacing:-.042em;
+}
+/* El clip de .ln es necesario para que las palabras entren
+   desde abajo; se le da aire lateral para que las cursivas
+   del degradado no se corten. */
+.hero-cine h1.split .ln{ padding-inline:.06em; margin-inline:-.06em; }
+
+/* Degradado sobre la última línea del titular. Va por CSS
+   porque [data-split] no admite marcado dentro. */
+.hero-cine h1.split .ln:last-child .wd{
+  background:var(--grad-flow);
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent; -webkit-text-fill-color:transparent;
+}
+
+.hero-cine .lead{
+  max-width:42ch;
+  color:var(--ink-soft);
+  margin-top:1.15rem;
+}
+
+/* Sombra bajo el texto: lo despega de la escena sin recuadro. */
+.hero-cine .hero-copy .eyebrow,
+.hero-cine .hero-copy h1,
+.hero-cine .hero-copy .lead{
+  text-shadow:0 2px 28px rgba(3,6,14,.6);
+}
+
+/* ---------- Indicador de scroll ---------- */
+.hero-cine .scroll-cue{
+  /* La seccion 12 ya la posiciona absolute centrada abajo;
+     aqui solo se ajusta el comportamiento de enlace. */
+  text-decoration:none;
+  transition:color .4s var(--ease), opacity .4s var(--ease);
+  opacity:.7;
+}
+.hero-cine .scroll-cue span{ font-size:.62rem; letter-spacing:.26em; }
+
+/* En ventanas bajas el hero se comprime y el indicador se
+   solapa con la ultima linea de los principios. Es un adorno,
+   asi que desaparece antes de estorbar. */
+@media (max-height:860px){
+  .hero-cine .scroll-cue{ display:none; }
+}
+.hero-cine .scroll-cue:hover{ color:var(--ink-soft); }
+.hero-cine .scroll-cue:focus-visible{
+  outline:2px solid var(--sky); outline-offset:6px; border-radius:4px;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+/* Tablet: el robot sigue a la derecha pero con menos aire. */
+@media (max-width:1180px){
+  .hero-cine .hero-visual{ min-height:clamp(340px,40vw,460px); }
+}
+
+/* Apilado: el robot pasa a ocupar la mitad superior y el texto
+   queda debajo, sobre el fondo ya oscurecido por el velo. */
+@media (max-width:860px){
+  .hero-cine{ min-height:auto; }
+  .hero-cine .hero-grid{
+    grid-template-columns:1fr;
+    grid-template-areas:"visual" "copy";
+    gap:clamp(1.2rem,4vw,2rem);
+  }
+  .hero-cine .hero-copy{ grid-area:copy; max-width:none; }
+  .hero-cine .hero-visual{ grid-area:visual; min-height:clamp(230px,44vw,330px); }
+  .hero-cine .hero-copy h1{ line-height:1.02; }
+  .hero-cine .lead{ max-width:52ch; }
+  .hero-cine .hero-veil{
+    background:
+      linear-gradient(180deg, rgba(5,7,15,.6) 0%, transparent 14%),
+      linear-gradient(180deg, transparent 26%, rgba(5,7,15,.86) 46%, #05070f 62%);
+  }
+  /* Apilado, el brazo es mas alto que su banda y cruzaria por
+     detras del titular. La mascara lo disuelve antes de
+     llegar al texto, asi que se lee como que se pierde en la
+     oscuridad en vez de quedar tapado. */
+  #heroScene{
+    -webkit-mask-image:linear-gradient(180deg, #000 0%, #000 28%, transparent 44%);
+            mask-image:linear-gradient(180deg, #000 0%, #000 28%, transparent 44%);
+  }
+  .hero-cine .scroll-cue{ display:none; }
+}
+
+@media (max-width:680px){
+  .hero-cine .hero-visual{ min-height:clamp(200px,52vw,280px); }
+  .hero-cine .hero-copy h1{ font-size:clamp(2.15rem,1.2rem + 5.4vw,3rem); }
+}
+
+/* Móvil rotado: casi no hay alto, la escena estorba. */
+@media (max-height:520px) and (orientation:landscape){
+  .hero-cine .hero-visual{ min-height:0; }
+  .hero-cine .hero-grid{ grid-template-columns:minmax(0,1fr) minmax(0,.8fr); grid-template-areas:none; }
+}
+
+/* ============================================================
+   Accesibilidad
+   ------------------------------------------------------------
+   hero-boot.js ni siquiera descarga three.js con movimiento
+   reducido. Esto cubre el caso de que ya estuviera montada.
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  #heroScene{ display:none !important; }
+  .hero-bg{ opacity:1 !important; }
+  .hero-bg::after{ opacity:.5 !important; }
+  .hero-cine .scroll-cue i{ animation:none !important; }
+}
+
+@media print{
+  .hero-stage{ display:none !important; }
+  .hero-cine .hero-visual{ display:none !important; }
+}
