@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05070f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#05070f">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>AutFlow — Automatización que hace avanzar tu operación</title>
+  <meta name="description"
+    content="AutFlow diseña automatizaciones e integraciones con IA para eliminar trabajo manual, conectar sistemas y dar visibilidad a la operación. Diagnóstico claro, implementación y acompañamiento.">
+  <link rel="canonical" href="https://autflow.co/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="AutFlow — Automatización que hace avanzar tu operación">
+  <meta property="og:description" content="Automatizaciones e integraciones con IA para eliminar trabajo manual y conectar la operación.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"AutFlow",
+    "description":"Agencia de automatización con IA para equipos en Latinoamérica.",
+    "areaServed":"Latinoamérica",
+    "serviceType":"Automatización de procesos con inteligencia artificial",
+    "telephone":"+573249192451"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Intro -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro-in">
+      <img class="intro-logo" src="assets/logo.png" alt="">
+      <div class="intro-word">AutFlow</div>
+      <div class="intro-bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cur-label"></span></div>
+
+  <!-- Progreso -->
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <!-- Gradiente reutilizable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2440ff" />
+        <stop offset="0.55" stop-color="#3fc6f5" />
+        <stop offset="1" stop-color="#8ff3ce" />
+      </linearGradient>
+      <linearGradient id="flowGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2440ff" />
+        <stop offset="0.5" stop-color="#3fc6f5" />
+        <stop offset="1" stop-color="#8ff3ce" />
+      </linearGradient>
+      <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#ffffff" stop-opacity=".95" />
+        <stop offset="45%" stop-color="#8ff3ce" stop-opacity=".7" />
+        <stop offset="100%" stop-color="#2440ff" stop-opacity="0" />
+      </radialGradient>
+    </defs>
+  </svg>
+
+  <!-- ================= HEADER ================= -->
+  <header class="hdr">
+    <div class="nav">
+      <a class="brand" href="#inicio" aria-label="AutFlow, inicio">
+        <img src="assets/logo.png" alt="" width="32" height="32">
+        <b>AutFlow</b>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#solucion">Solución</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#diferencial">Método</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#opciones">Opciones</a>
+        <a href="#cotizador">Cotizador</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-act">
+        <a class="btn btn-ghost" href="#cotizador">Cotizar</a>
+        <a class="btn btn-primary" data-magnet
+          href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20quiero%20agendar%20una%20llamada"
+          target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+          <span>Agenda una llamada</span>
+        </a>
+        <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <a class="dl" href="#solucion">Solución <span>01</span></a>
+    <a class="dl" href="#servicios">Servicios <span>02</span></a>
+    <a class="dl" href="#diferencial">Método <span>03</span></a>
+    <a class="dl" href="#proceso">Proceso <span>04</span></a>
+    <a class="dl" href="#opciones">Opciones <span>05</span></a>
+    <a class="dl" href="#cotizador">Cotizador <span>06</span></a>
+    <a class="dl" href="#faq">FAQ <span>07</span></a>
+    <div class="drawer-cta">
+      <a class="btn btn-primary btn-lg btn-block"
+        href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20quiero%20agendar%20una%20llamada"
+        target="_blank" rel="noopener">Agenda una llamada</a>
+      <a class="btn btn-ghost btn-lg btn-block" href="#cotizador">Cotizar mi automatización</a>
+    </div>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio" data-tone="dark">
+    <canvas id="neural" aria-hidden="true"></canvas>
+    <div class="hero-veil" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <span class="eyebrow rv">Soluciones operativas · Automatización · IA</span>
+
+          <h1 data-split>Deja de pagar<br>con tiempo por<br><span class="grad-text">trabajo repetitivo.</span></h1>
+
+          <p class="hero-kick rv" style="--d:420ms">
+            Tu equipo debería resolver problemas, no mover información.
+          </p>
+
+          <p class="lead rv" style="--d:520ms">
+            Diseñamos flujos que conectan tus sistemas, ejecutan tareas repetitivas,
+            detectan excepciones y dejan a tu equipo lo que realmente necesita criterio.
+          </p>
+
+          <div class="hero-cta rv" style="--d:620ms">
+            <a class="btn btn-primary btn-lg" data-magnet data-wa-topic="una oportunidad de automatización"
+              href="https://wa.me/573249192451"
+              target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+              Hablar de mi operación
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#cotizador">
+              Encontrar mi oportunidad
+              <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-proof hero-principles rv" style="--d:720ms">
+            <div class="proof"><b>01</b><span>Detectamos cuellos de botella</span></div>
+            <div class="proof"><b>02</b><span>Conectamos lo que ya utilizas</span></div>
+            <div class="proof"><b>03</b><span>Medimos el resultado después de implementar</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual rv rv-zoom" style="--d:300ms">
+          <div class="robot-stage tilt" data-tilt="6">
+            <div class="robot-glow" aria-hidden="true"></div>
+            <svg class="robot-svg" viewBox="0 0 440 680" role="img" aria-label="Brazo robótico industrial ensamblándose pieza por pieza">
+              <defs>
+                <linearGradient id="rbMetal" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#4a5b7d"/>
+                  <stop offset="55%" stop-color="#232f47"/>
+                  <stop offset="100%" stop-color="#121a2c"/>
+                </linearGradient>
+                <linearGradient id="rbMetalLight" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#6c81a6"/>
+                  <stop offset="100%" stop-color="#2c3a58"/>
+                </linearGradient>
+                <linearGradient id="rbAccent" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#3fc6f5"/>
+                  <stop offset="100%" stop-color="#2440ff"/>
+                </linearGradient>
+                <radialGradient id="rbLensCore" cx="45%" cy="40%" r="65%">
+                  <stop offset="0%" stop-color="#eafff6"/>
+                  <stop offset="45%" stop-color="#8ff3ce"/>
+                  <stop offset="100%" stop-color="#1c6a52"/>
+                </radialGradient>
+                <radialGradient id="rbGroundGrad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#000" stop-opacity=".55"/>
+                  <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <g class="rb-root">
+                <ellipse class="rb-ground" cx="220" cy="616" rx="116" ry="15" fill="url(#rbGroundGrad)"/>
+
+                <!-- RobotBase -->
+                <g class="rb-piece rb-base">
+                  <ellipse cx="220" cy="548" rx="70" ry="12" fill="url(#rbMetalLight)"/>
+                  <rect x="150" y="548" width="140" height="58" rx="18" fill="url(#rbMetal)" stroke="rgba(63,198,245,.16)"/>
+                  <rect x="211" y="552" width="5" height="46" rx="2.5" fill="#fff" opacity=".14"/>
+                  <circle cx="182" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <circle cx="202" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <circle cx="238" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <circle cx="258" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <rect x="272" y="588" width="18" height="8" rx="3" fill="#8ff3ce" opacity=".5"/>
+                </g>
+
+                <!-- RobotLowerJoint -->
+                <g class="rb-piece rb-lowerjoint">
+                  <rect x="203" y="510" width="34" height="42" rx="10" fill="url(#rbMetal)"/>
+                  <circle cx="220" cy="492" r="33" fill="url(#rbMetalLight)" stroke="rgba(63,198,245,.25)" stroke-width="1.2"/>
+                  <circle cx="220" cy="492" r="23" fill="none" stroke="#0d1424" stroke-width="2"/>
+                  <circle cx="220" cy="492" r="5" fill="#3fc6f5" opacity=".55"/>
+                </g>
+
+                <!-- Brazo articulado: brazo inferior, codo, brazo superior, cuello, cabezal, lente -->
+                <g class="rb-armchain">
+                  <!-- RobotLowerArm -->
+                  <g class="rb-piece rb-lowerarm">
+                    <rect x="194" y="372" width="52" height="140" rx="22" fill="url(#rbMetal)" stroke="rgba(255,255,255,.06)"/>
+                    <rect x="207" y="382" width="6" height="120" rx="3" fill="#fff" opacity=".12"/>
+                    <circle cx="220" cy="400" r="3" fill="#0a0f1c"/>
+                    <circle cx="220" cy="460" r="3" fill="#0a0f1c"/>
+                  </g>
+
+                  <!-- RobotMiddleJoint -->
+                  <g class="rb-piece rb-midjoint">
+                    <circle cx="196" cy="366" r="26" fill="url(#rbMetalLight)" stroke="rgba(63,198,245,.25)" stroke-width="1.1"/>
+                    <circle cx="196" cy="366" r="17" fill="none" stroke="#0d1424" stroke-width="2"/>
+                    <circle cx="196" cy="366" r="4" fill="#3fc6f5" opacity=".5"/>
+                  </g>
+
+                  <!-- RobotUpperArm -->
+                  <g class="rb-piece rb-upperarm">
+                    <rect x="173" y="262" width="46" height="108" rx="20" fill="url(#rbMetal)" stroke="rgba(255,255,255,.06)"/>
+                    <rect x="188" y="270" width="5" height="88" rx="2.5" fill="#fff" opacity=".12"/>
+                    <circle cx="196" cy="286" r="2.6" fill="#0a0f1c"/>
+                    <circle cx="196" cy="330" r="2.6" fill="#0a0f1c"/>
+                  </g>
+
+                  <!-- RobotNeck -->
+                  <g class="rb-piece rb-neck">
+                    <rect x="199" y="222" width="34" height="46" rx="14" fill="url(#rbMetalLight)" stroke="rgba(63,198,245,.2)"/>
+                  </g>
+
+                  <!-- RobotHead -->
+                  <g class="rb-piece rb-head">
+                    <rect x="159" y="150" width="114" height="76" rx="28" fill="url(#rbMetal)" stroke="rgba(63,198,245,.2)"/>
+                    <rect x="176" y="160" width="46" height="6" rx="3" fill="#fff" opacity=".1"/>
+
+                    <!-- RobotLens -->
+                    <g class="rb-piece rb-lens">
+                      <circle cx="185" cy="188" r="19" fill="url(#rbMetal)" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+                      <circle cx="185" cy="188" r="12" fill="#060a13"/>
+                      <circle class="rb-lens-core" cx="185" cy="188" r="6.4" fill="url(#rbLensCore)"/>
+                      <circle class="rb-activation-ring" cx="185" cy="188" r="20"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.6" style="--sx:-22px;--sy:-18px;--sd:0s"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.4" style="--sx:20px;--sy:-22px;--sd:.12s"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.5" style="--sx:-14px;--sy:20px;--sd:.22s"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.3" style="--sx:24px;--sy:12px;--sd:.05s"/>
+                    </g>
+                  </g>
+                </g>
+
+                <!-- RobotPanels -->
+                <g class="rb-piece rb-panels">
+                  <rect x="175" y="300" width="22" height="9" rx="3" fill="url(#rbAccent)" opacity=".8"/>
+                  <rect x="248" y="160" width="24" height="9" rx="3" fill="#0d1424"/>
+                  <rect x="248" y="160" width="24" height="9" rx="3" fill="none" stroke="rgba(63,198,245,.35)"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <a class="term-cta" href="#cotizador">
+            <span class="tc-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="3"/><path d="M8 7h8M8 11h3M8 15h3M15 11v5M13 13.5h4"/></svg>
+            </span>
+            <span class="tc-tx">
+              <b>¿Tienes un proceso en mente?</b>
+              <span>Cuéntanos el problema y te orientamos</span>
+            </span>
+            <svg class="arr tc-ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= STACK ================= -->
+  <section class="marq" data-tone="dark" aria-label="Herramientas que integramos">
+    <p class="marq-lead">Construimos dentro de las herramientas que ya usas</p>
+    <div class="marq-mask">
+      <div class="marq-track" style="--dur:38s">
+        <div>
+          <span class="mq-item"><i class="mq-dot"></i>n8n</span>
+          <span class="mq-item"><i class="mq-dot"></i>Zapier</span>
+          <span class="mq-item"><i class="mq-dot"></i>Make</span>
+          <span class="mq-item"><i class="mq-dot"></i>Power Automate</span>
+          <span class="mq-item"><i class="mq-dot"></i>WhatsApp Business API</span>
+          <span class="mq-item"><i class="mq-dot"></i>OpenAI</span>
+          <span class="mq-item"><i class="mq-dot"></i>Claude</span>
+          <span class="mq-item"><i class="mq-dot"></i>Python</span>
+          <span class="mq-item"><i class="mq-dot"></i>Google Sheets</span>
+          <span class="mq-item"><i class="mq-dot"></i>Notion</span>
+          <span class="mq-item"><i class="mq-dot"></i>Airtable</span>
+          <span class="mq-item"><i class="mq-dot"></i>HubSpot</span>
+          <span class="mq-item"><i class="mq-dot"></i>Slack</span>
+          <span class="mq-item"><i class="mq-dot"></i>Gmail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam seam-to-light" aria-hidden="true"></div>
+
+  <!-- ================= SOLUCIÓN ================= -->
+  <section class="sec" id="solucion" data-tone="light">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="stmt">
+        <span class="eyebrow">Nuestra forma de trabajar</span>
+        <h2 style="margin-top:1.4rem">No vendemos bots.<br><span class="mark mark-i">Resolvemos procesos.</span></h2>
+      </div>
+      <p class="lead stmt-sub">
+        Puede ser un seguimiento comercial, un reporte, una carga de datos, una validación o una atención por WhatsApp. Primero entendemos el problema. Después construimos solo lo necesario para resolverlo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= DIFERENCIAL ================= -->
+  <section class="sec af-diff" id="diferencial" data-tone="light">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Por qué un equipo pequeño</span>
+        <h2 data-split>No necesitas una agencia grande. Necesitas que alguien se haga responsable del resultado.</h2>
+        <p class="lead">Trabajas directamente con quienes diseñan y construyen la solución. Menos reuniones de intermediarios, menos capas y más capacidad para adaptar el sistema a tu realidad.</p>
+      </div>
+
+      <div class="diff-grid stagger">
+        <article class="card diff-card">
+          <span class="diff-num">01</span>
+          <h3>Automatizamos lo repetitivo</h3>
+          <p>Lo que tiene reglas claras puede ejecutarse solo. Lo que necesita criterio llega a una persona con la información necesaria.</p>
+        </article>
+        <article class="card diff-card">
+          <span class="diff-num">02</span>
+          <h3>Construimos alrededor de tu negocio</h3>
+          <p>No te obligamos a cambiar de CRM, ERP o herramienta porque sea nuestra favorita. Integramos lo que ya funciona y reemplazamos solo lo que realmente estorba.</p>
+        </article>
+        <article class="card diff-card">
+          <span class="diff-num">03</span>
+          <h3>Te mostramos si funcionó</h3>
+          <p>Antes de implementar definimos qué significa mejorar: horas recuperadas, menos errores, respuestas más rápidas o mayor capacidad del equipo.</p>
+        </article>
+      </div>
+
+      <div class="diff-callout">
+        <span>La pregunta no es “¿qué IA compro?”</span>
+        <b>Es “¿qué problema de mi operación vale la pena resolver primero?”</b>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ANTES / DESPUÉS ================= -->
+  <section class="sec" style="padding-top:0" data-tone="light">
+    <div class="wrap">
+      <div class="ba-grid rv">
+
+        <div class="ba-col ba-before">
+          <div class="ba-head">
+            <div class="bh-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <span>Hoy</span>
+              <b>Tu equipo, a mano</b>
+            </div>
+          </div>
+          <div class="ba-list stagger">
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Alguien copia datos de una pestaña a otra</div>
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Los leads se enfrían mientras nadie responde</div>
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>El reporte del lunes se arma el lunes</div>
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Un error de dedo se descubre una semana después</div>
+          </div>
+        </div>
+
+        <div class="ba-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+
+        <div class="ba-col ba-after">
+          <div class="ba-head">
+            <div class="bh-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 9-12h-7l1-8Z"/></svg>
+            </div>
+            <div>
+              <span>Con AutFlow</span>
+              <b>El proceso, solo</b>
+            </div>
+          </div>
+          <div class="ba-list stagger">
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Los sistemas se hablan entre sí, sin intermediarios</div>
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cada lead recibe respuesta en segundos, 24/7</div>
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>El reporte ya está listo cuando abres el correo</div>
+            <div class="ba-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Las excepciones llegan marcadas a una persona</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICIOS ================= -->
+  <section class="sec" id="servicios" data-tone="light">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Servicios</span>
+        <h2 data-split>Soluciones construidas<br>para tu operación</h2>
+        <p class="lead">Desde una automatización puntual hasta una operación conectada. No partimos de un catálogo: partimos del problema que quieres resolver.</p>
+      </div>
+
+      <div class="svc-grid stagger">
+        <article class="card card-glow svc tilt" data-cursor="ver">
+          <div class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></div>
+          <span class="snum">01 — Diagnóstico</span>
+          <h4>Encontramos dónde se va el tiempo</h4>
+          <p>Mapeamos tu operación real y priorizamos lo que más horas libera primero.</p>
+          <div class="svc-chips"><span class="chip">Entrevistas</span><span class="chip">Mapa de procesos</span></div>
+        </article>
+
+        <article class="card card-glow svc tilt" data-cursor="ver">
+          <div class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M8 14h.01M16 14h.01M9 18h6"/></svg></div>
+          <span class="snum">02 — Construcción</span>
+          <h4>Construimos lo que tu proceso necesita</h4>
+          <p>Automatización de procesos, integraciones, agentes de IA o desarrollo a medida cuando la operación lo exige.</p>
+          <div class="svc-chips"><span class="chip">Agentes de IA</span><span class="chip">Integraciones</span><span class="chip">RPA</span></div>
+        </article>
+
+        <article class="card card-glow svc tilt" data-cursor="ver">
+          <div class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/><path d="M12 8v4l3 2"/></svg></div>
+          <span class="snum">03 — Continuidad</span>
+          <h4>Seguimos cuando ya está funcionando</h4>
+          <p>Documentamos, monitoreamos y ajustamos. Tu operación cambia; la solución también puede hacerlo.</p>
+          <div class="svc-chips"><span class="chip">Monitoreo</span><span class="chip">Documentación</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BANDA ================= -->
+  <section class="sec" style="padding-top:0" data-tone="light">
+    <div class="wrap">
+      <div class="band rv">
+        <img src="images/imagen_proyectos.jpg" alt="Equipo de AutFlow diseñando automatizaciones con IA" loading="lazy" decoding="async" data-par="52">
+        <div class="band-in">
+          <h3>Una solución pequeña puede generar un cambio grande</h3>
+          <div class="band-stats">
+            <div><b>Directo</b><span>Hablas con quienes construyen</span></div>
+            <div><b>Flexible</b><span>La solución crece contigo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ENCAJE ================= -->
+  <section class="sec af-fit" data-tone="light">
+    <div class="wrap">
+      <div class="fit-box">
+        <div>
+          <span class="eyebrow">Antes de venderte algo</span>
+          <h3>Primero vemos si <span class="mark mark-i">te conviene</span> automatizar.</h3>
+        </div>
+        <div class="fit-list">
+          <span>✓ Si ahorra tiempo real</span>
+          <span>✓ Si reduce errores</span>
+          <span>✓ Si mejora la atención</span>
+          <span>✓ Si la inversión tiene sentido</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESO ================= -->
+  <section class="sec" id="proceso" data-tone="light">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Proceso</span>
+        <h2 data-split>Así fluye un proyecto</h2>
+        <p class="lead">Cuatro etapas, de la primera llamada a un flujo corriendo en producción.</p>
+      </div>
+
+      <div class="proc-grid">
+
+        <div class="proc-sticky">
+          <div class="proc-stage">
+            <div class="grid-bg" aria-hidden="true"></div>
+            <svg class="proc-svg" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+              <circle cx="200" cy="200" r="150" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+              <circle cx="200" cy="200" r="108" stroke="currentColor" stroke-opacity=".08" stroke-width="1" stroke-dasharray="4 7"/>
+
+              <path class="proc-track" d="M200 200 L200 76" stroke-linecap="round"/>
+              <path class="proc-track" d="M200 200 L324 200" stroke-linecap="round"/>
+              <path class="proc-track" d="M200 200 L200 324" stroke-linecap="round"/>
+              <path class="proc-track" d="M200 200 L76 200" stroke-linecap="round"/>
+
+              <path class="proc-edge" data-step="0" d="M200 200 L200 76"  stroke="url(#flowGrad)" stroke-width="2" stroke-linecap="round"/>
+              <path class="proc-edge" data-step="1" d="M200 200 L324 200" stroke="url(#flowGrad)" stroke-width="2" stroke-linecap="round"/>
+              <path class="proc-edge" data-step="2" d="M200 200 L200 324" stroke="url(#flowGrad)" stroke-width="2" stroke-linecap="round"/>
+              <path class="proc-edge" data-step="3" d="M200 200 L76 200"  stroke="url(#flowGrad)" stroke-width="2" stroke-linecap="round"/>
+
+              <circle cx="200" cy="200" r="62" fill="url(#coreGrad)" opacity=".85"/>
+              <circle cx="200" cy="200" r="19" fill="url(#flowGrad)"/>
+              <circle cx="200" cy="200" r="27" stroke="url(#flowGrad)" stroke-width="1.4" opacity=".55"/>
+
+              <g class="proc-node" data-step="0">
+                <circle cx="200" cy="62" r="28" fill="#0b1120" stroke="url(#flowGrad)" stroke-width="1.6"/>
+                <path d="M193 62a7 7 0 1 0 14 0 7 7 0 1 0-14 0M205 67l4 4" transform="translate(-3 -4)" stroke="#8ff3ce" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+              </g>
+              <g class="proc-node" data-step="1">
+                <circle cx="338" cy="200" r="28" fill="#0b1120" stroke="url(#flowGrad)" stroke-width="1.6"/>
+                <path d="M330 194h16M330 200h16M330 206h10" stroke="#3fc6f5" stroke-width="1.8" stroke-linecap="round"/>
+              </g>
+              <g class="proc-node" data-step="2">
+                <circle cx="200" cy="338" r="28" fill="#0b1120" stroke="url(#flowGrad)" stroke-width="1.6"/>
+                <path d="M203 328l-8 12h10l-2 10 8-12h-10l2-10Z" fill="#8ff3ce"/>
+              </g>
+              <g class="proc-node" data-step="3">
+                <circle cx="62" cy="200" r="28" fill="#0b1120" stroke="url(#flowGrad)" stroke-width="1.6"/>
+                <path d="M55 203l5 5 10-11" stroke="#8ff3ce" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </g>
+            </svg>
+            <div class="proc-badge"><span class="pb-n">01</span><span class="pb-t">Descubrimiento</span></div>
+          </div>
+        </div>
+
+        <div class="proc-steps">
+          <article class="pstep" data-title="Descubrimiento">
+            <div class="pstep-top">
+              <span class="pstep-n">01</span>
+              <h4>Descubrimiento</h4>
+              <span class="pstep-when">Semana 1</span>
+            </div>
+            <p>Una llamada de 20 minutos y una revisión de tu operación. Salimos con la lista de procesos
+              ordenada por horas que libera cada uno.</p>
+            <span class="pstep-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sabes exactamente qué automatizar primero</span>
+          </article>
+
+          <article class="pstep" data-title="Diseño del flujo">
+            <div class="pstep-top">
+              <span class="pstep-n">02</span>
+              <h4>Diseño del flujo</h4>
+              <span class="pstep-when">Semana 1–2</span>
+            </div>
+            <p>Definimos qué resuelve la IA y qué sigue revisando una persona. Nada se automatiza
+              a ciegas.</p>
+            <span class="pstep-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Apruebas el flujo antes de que exista</span>
+          </article>
+
+          <article class="pstep" data-title="Automatización">
+            <div class="pstep-top">
+              <span class="pstep-n">03</span>
+              <h4>Automatización</h4>
+              <span class="pstep-when">Semana 2–3</span>
+            </div>
+            <p>Construimos e integramos el agente dentro de tus herramientas actuales.
+              Sin migrar nada, sin cambiar de plataforma.</p>
+            <span class="pstep-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tu equipo sigue trabajando igual que siempre</span>
+          </article>
+
+          <article class="pstep" data-title="Lanzamiento">
+            <div class="pstep-top">
+              <span class="pstep-n">04</span>
+              <h4>Lanzamiento</h4>
+              <span class="pstep-when">Semana 3–4</span>
+            </div>
+            <p>Salimos a producción, medimos con datos reales y ajustamos. Te queda el flujo
+              documentado y transferible.</p>
+            <span class="pstep-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Horas liberadas, medibles desde el primer mes</span>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTORES ================= -->
+  <section class="sec" style="padding-top:0" data-tone="light">
+    <div class="wrap">
+      <p class="marq-lead">Sectores donde ya estamos corriendo</p>
+      <div class="pill-row stagger">
+        <span class="pill">Retail</span>
+        <span class="pill">Logística</span>
+        <span class="pill">Fintech</span>
+        <span class="pill">Salud</span>
+        <span class="pill">Educación</span>
+        <span class="pill">Servicios profesionales</span>
+        <span class="pill">Inmobiliario</span>
+        <span class="pill">Manufactura</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam seam-to-dark" aria-hidden="true"></div>
+
+  <!-- ================= OPCIONES ================= -->
+  <section class="sec" id="opciones" data-tone="dark">
+    <div class="aura" style="width:480px;height:480px;top:-120px;right:-140px;background:rgba(36,64,255,.35)" data-par="60" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="head head-center">
+        <span class="eyebrow">Por dónde empezar</span>
+        <h2 data-split>Tres problemas.<br>Una misma idea: resolverlos bien.</h2>
+        <p class="lead">Estos no son productos enlatados. Son ejemplos de problemas que podemos resolver. El alcance y el precio se definen después de entender tu caso.</p>
+      </div>
+
+      <div class="price-note">Implementaciones pequeñas desde <b>$700.000 COP</b>. Acompañamiento opcional desde <b>$180.000/mes</b>. Herramientas de terceros y consumo de APIs se cotizan aparte cuando aplique.</div>
+
+      <div class="pk-grid stagger">
+
+        <article class="card card-glow pk tilt" data-tilt="4">
+          <div class="pk-tag">Ejemplo de solución</div>
+          <h4>Atención que no se queda esperando</h4>
+          <p>Automatizamos las consultas repetitivas, capturamos la información necesaria y pasamos a una persona cuando realmente hace falta.</p>
+          <ul class="pk-feat">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>WhatsApp y otros canales que ya uses</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Escalamiento a una persona con contexto</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Registro en tu CRM o sistema actual</li>
+          </ul>
+          <div class="pk-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Desde 1–2 semanas · según alcance
+          </div>
+          <a class="btn btn-ghost btn-block"
+            href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20me%20interesa%20el%20atenci%C3%B3n%20automatizada"
+            target="_blank" rel="noopener">Consultar</a>
+        </article>
+
+        <article class="card card-glow pk feat tilt" data-tilt="4">
+          <div class="pk-tag">Ejemplo de solución</div>
+          <h4>Seguimiento comercial sin perseguir clientes</h4>
+          <p>Capturamos, clasificamos y hacemos seguimiento a los contactos para que tu equipo se enfoque en las oportunidades que sí requieren intervención.</p>
+          <ul class="pk-feat">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Captura desde los canales que ya utilizas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Seguimiento según reglas de tu negocio</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Aviso al equipo cuando necesita actuar</li>
+          </ul>
+          <div class="pk-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Desde 1–2 semanas · según alcance
+          </div>
+          <a class="btn btn-primary btn-block" data-magnet
+            href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20me%20interesa%20el%20seguimiento%20comercial"
+            target="_blank" rel="noopener">Consultar</a>
+        </article>
+
+        <article class="card card-glow pk tilt" data-tilt="4">
+          <div class="pk-tag">Ejemplo de solución</div>
+          <h4>Deja de copiar datos entre sistemas</h4>
+          <p>Conectamos formularios, correo, Excel, CRM, ERP, WhatsApp o APIs para que la información viaje sin trabajo manual innecesario.</p>
+          <ul class="pk-feat">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Conexión entre tus sistemas actuales</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reportes, alertas y tareas automáticas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reglas y alertas según tu operación</li>
+          </ul>
+          <div class="pk-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Desde 2–3 semanas · según alcance
+          </div>
+          <a class="btn btn-ghost btn-block"
+            href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20me%20interesa%20el%20integraci%C3%B3n%20de%20sistemas"
+            target="_blank" rel="noopener">Consultar</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COTIZADOR ================= -->
+  <section class="sec" id="cotizador" data-tone="dark">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="head head-center">
+        <span class="eyebrow">Cotizador</span>
+        <h2 data-split>¿Cuánto puede costar<br>resolver tu problema?</h2>
+        <p class="lead">Te damos un rango inicial en menos de 2 minutos. No es una cotización final: es una forma de saber si vale la pena conversar.</p>
+      </div>
+
+      <form class="calc rv" id="calc" novalidate>
+
+        <div class="calc-main">
+          <div class="calc-top">
+            <div class="ring">
+              <svg viewBox="0 0 46 46" aria-hidden="true">
+                <circle class="rbg" cx="23" cy="23" r="20"></circle>
+                <circle class="rfg" cx="23" cy="23" r="20"></circle>
+              </svg>
+              <b>1</b>
+            </div>
+            <div class="calc-top-txt">
+              <b id="calcTitle">Paso 1 de 7</b>
+              <span id="calcSub">Toma menos de 2 minutos</span>
+            </div>
+            <button type="button" class="calc-reset" id="calcReset">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 3v6h6"/></svg>
+              <span>Reiniciar</span>
+            </button>
+          </div>
+
+          <div class="calc-body">
+
+            <!-- 1 -->
+            <div class="cstep on" data-step="1" data-sub="Elige lo que más se parezca a tu caso">
+              <h3>¿Qué proceso quieres quitarte de encima?</h3>
+              <p class="chint">Si ninguna encaja perfecto, elige la más cercana.</p>
+              <div class="copts" data-field="category">
+                <button type="button" class="copt" data-value="documentos" data-points="2"><span class="ce">📄</span> Procesar documentos</button>
+                <button type="button" class="copt" data-value="excel" data-points="1"><span class="ce">📊</span> Excel y reportes</button>
+                <button type="button" class="copt" data-value="web" data-points="2"><span class="ce">🌐</span> Tareas en páginas web</button>
+                <button type="button" class="copt" data-value="correos" data-points="1"><span class="ce">📧</span> Correos electrónicos</button>
+                <button type="button" class="copt" data-value="integracion" data-points="3"><span class="ce">🔄</span> Conectar sistemas</button>
+                <button type="button" class="copt" data-value="chatbot" data-points="3"><span class="ce">🤖</span> Atención / agente IA</button>
+                <button type="button" class="copt" data-value="escritorio" data-points="3"><span class="ce">🖥️</span> Apps de escritorio</button>
+                <button type="button" class="copt" data-value="combinacion" data-points="3"><span class="ce">🔀</span> Varias cosas a la vez</button>
+                <button type="button" class="copt" data-value="no_seguro" data-points="2"><span class="ce">❓</span> Aún no lo tengo claro</button>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="cstep" data-step="2" data-sub="Un estimado es suficiente">
+              <h3>¿Cuántas veces pasa al mes?</h3>
+              <p class="chint">No necesitas el número exacto.</p>
+              <div class="copts list" data-field="volumen">
+                <button type="button" class="copt" data-value="v1" data-points="0">Menos de 10 veces</button>
+                <button type="button" class="copt" data-value="v2" data-points="1">Entre 10 y 50 veces</button>
+                <button type="button" class="copt" data-value="v3" data-points="2">Entre 50 y 200 veces</button>
+                <button type="button" class="copt" data-value="v4" data-points="3">Entre 200 y 1.000 veces</button>
+                <button type="button" class="copt" data-value="v5" data-points="4">Más de 1.000 veces</button>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="cstep" data-step="3" data-sub="De principio a fin, una sola vez">
+              <h3>¿Cuánto tarda una persona hoy?</h3>
+              <p class="chint">Con esto calculamos las horas que recuperas.</p>
+              <div class="copts list" data-field="tiempo">
+                <button type="button" class="copt" data-value="t1" data-points="0">Menos de 5 minutos</button>
+                <button type="button" class="copt" data-value="t2" data-points="1">Entre 5 y 15 minutos</button>
+                <button type="button" class="copt" data-value="t3" data-points="2">Entre 15 y 30 minutos</button>
+                <button type="button" class="copt" data-value="t4" data-points="3">Entre 30 y 60 minutos</button>
+                <button type="button" class="copt" data-value="t5" data-points="4">Más de una hora</button>
+              </div>
+            </div>
+
+            <!-- 4 adaptativo -->
+            <div class="cstep" data-step="4" data-adaptive data-sub="Una pregunta según tu caso">
+
+              <div class="cvariant" data-category="documentos">
+                <h3>¿Qué documentos procesas?</h3>
+                <p class="chint">Los escaneados y las imágenes requieren lectura con IA.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="pdf_digital" data-points="0">PDF digitales</button>
+                  <button type="button" class="copt" data-value="pdf_escaneado" data-points="2">PDF escaneados</button>
+                  <button type="button" class="copt" data-value="imagenes" data-points="2">Imágenes o fotos</button>
+                  <button type="button" class="copt" data-value="word" data-points="0">Documentos Word</button>
+                  <button type="button" class="copt" data-value="mixto" data-points="3">De todo un poco</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="excel">
+                <h3>¿Qué tan complejos son los archivos?</h3>
+                <p class="chint">Los formatos que cambian son lo que más trabajo da.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="sencillo" data-points="0">Un archivo sencillo</button>
+                  <button type="button" class="copt" data-value="varios" data-points="1">Varios archivos</button>
+                  <button type="button" class="copt" data-value="plantillas" data-points="2">Plantillas con varias hojas</button>
+                  <button type="button" class="copt" data-value="variables" data-points="4">Formatos que cambian seguido</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="1">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="web">
+                <h3>¿La página pide iniciar sesión?</h3>
+                <p class="chint">El doble factor cambia bastante el enfoque técnico.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="no" data-points="0">No, es pública</button>
+                  <button type="button" class="copt" data-value="usuario" data-points="2">Sí, usuario y contraseña</button>
+                  <button type="button" class="copt" data-value="mfa" data-points="4">Sí, con MFA o 2FA</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="correos">
+                <h3>¿Qué tan parecidos son los correos?</h3>
+                <p class="chint">Entre más varíen, más criterio necesita el agente.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="fijo" data-points="0">Siempre el mismo formato</button>
+                  <button type="button" class="copt" data-value="variable" data-points="2">Cambian bastante</button>
+                  <button type="button" class="copt" data-value="adjuntos" data-points="3">Hay que leer los adjuntos</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="1">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="integracion">
+                <h3>¿Los sistemas tienen API?</h3>
+                <p class="chint">Si no la hay, automatizamos la interfaz directamente.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="documentada" data-points="1">Sí, con documentación</button>
+                  <button type="button" class="copt" data-value="sin_doc" data-points="3">Sí, pero sin documentar</button>
+                  <button type="button" class="copt" data-value="sin_api" data-points="5">No tienen API</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="chatbot">
+                <h3>¿Qué tan variadas son las consultas?</h3>
+                <p class="chint">Conectarse a tus datos es lo que lo vuelve realmente útil.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="fijas" data-points="1">Preguntas frecuentes fijas</button>
+                  <button type="button" class="copt" data-value="contexto" data-points="3">Conversación con contexto</button>
+                  <button type="button" class="copt" data-value="crm" data-points="5">Debe consultar el CRM o la base de datos</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="escritorio">
+                <h3>¿La aplicación permite integrarse?</h3>
+                <p class="chint">Una API, una base de datos o archivos exportables.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="disponible" data-points="1">Sí, hay por dónde entrar</button>
+                  <button type="button" class="copt" data-value="solo_gui" data-points="4">No, solo la pantalla</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="combinacion">
+                <h3>¿Cuántas tareas distintas combina?</h3>
+                <p class="chint">Cada tarea suma un tramo al flujo.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="dos" data-points="2">Dos tareas</button>
+                  <button type="button" class="copt" data-value="tres" data-points="4">Tres tareas</button>
+                  <button type="button" class="copt" data-value="cuatro" data-points="6">Cuatro o más</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="3">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="no_seguro">
+                <h3>¿Qué tan repetitivo es el proceso?</h3>
+                <p class="chint">Entre más predecible, más fácil de automatizar.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="repetitivo" data-points="0">Siempre igual, muy predecible</button>
+                  <button type="button" class="copt" data-value="algo" data-points="2">Algo variable</button>
+                  <button type="button" class="copt" data-value="mucho" data-points="4">Bastante variable</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="cstep" data-step="5" data-sub="Cada sistema es un punto de conexión">
+              <h3>¿Con cuántos sistemas debe hablar?</h3>
+              <p class="chint">Por ejemplo: Excel → correo → página web → ERP.</p>
+              <div class="copts list" data-field="sistemas">
+                <button type="button" class="copt" data-value="s1" data-points="0">Uno solo</button>
+                <button type="button" class="copt" data-value="s2" data-points="1">Dos</button>
+                <button type="button" class="copt" data-value="s3" data-points="2">Entre tres y cuatro</button>
+                <button type="button" class="copt" data-value="s4" data-points="4">Cinco o más</button>
+                <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="cstep" data-step="6" data-sub="Define la infraestructura que necesita">
+              <h3>¿Cada cuánto debería ejecutarse?</h3>
+              <div class="copts list" data-field="frecuencia">
+                <button type="button" class="copt" data-value="manual" data-points="0">Solo cuando yo lo pida</button>
+                <button type="button" class="copt" data-value="semanal" data-points="0">Una vez por semana</button>
+                <button type="button" class="copt" data-value="diaria" data-points="1">Todos los días</button>
+                <button type="button" class="copt" data-value="varias" data-points="2">Varias veces al día</button>
+                <button type="button" class="copt" data-value="continua" data-points="4">24/7, sin parar</button>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="cstep" data-step="7" data-sub="Última pregunta">
+              <h3>¿Qué tan seguido hay casos raros?</h3>
+              <p class="chint">Los que no siguen la regla y alguien tiene que revisar aparte.</p>
+              <div class="copts list" data-field="excepciones">
+                <button type="button" class="copt" data-value="casi_nunca" data-points="0">Casi nunca, siempre es igual</button>
+                <button type="button" class="copt" data-value="algunas" data-points="1">Dos o tres casos conocidos</button>
+                <button type="button" class="copt" data-value="muchas" data-points="3">Muchos casos borde</button>
+                <button type="button" class="copt" data-value="no_seguro" data-points="1">No estoy seguro</button>
+              </div>
+            </div>
+
+            <!-- resultado -->
+            <div class="cstep cres" data-step="result">
+              <span class="cres-tier" id="resTier">Complejidad</span>
+              <div class="cres-price" id="resPrice">$0</div>
+              <div class="cres-cur">pesos colombianos · rango estimado del proyecto</div>
+              <dl class="cres-sum" id="resSum"></dl>
+              <a class="btn btn-primary btn-lg btn-block" id="resWa" data-magnet
+                href="https://wa.me/573249192451" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+                Quiero revisar este caso con AutFlow
+              </a>
+              <p class="cres-note">Es una referencia inicial. El precio final depende del alcance real, integraciones y operación. Lo revisamos contigo antes de empezar.</p>
+            </div>
+
+          </div>
+
+          <div class="calc-nav">
+            <button type="button" class="btn btn-ghost hid" id="calcBack">Atrás</button>
+            <button type="button" class="btn btn-primary" id="calcNext" disabled>Siguiente</button>
+          </div>
+        </div>
+
+        <aside class="calc-side">
+          <div class="live">
+            <div class="live-k"><i></i> Estimado en vivo</div>
+            <div class="live-v grad" id="livePrice">—</div>
+            <div class="live-s" id="liveHint">Responde 3 preguntas para ver tu rango</div>
+            <div class="live-bar"><i id="liveBar"></i></div>
+          </div>
+
+          <div class="live">
+            <div class="live-k"><i></i> Lo que recuperas</div>
+            <div class="live-rows">
+              <div class="live-row done" style="opacity:1">
+                <span class="lr-i">h</span> Horas al mes
+                <span class="lr-v" id="liveHours">—</span>
+              </div>
+              <div class="live-row done" style="opacity:1">
+                <span class="lr-i">$</span> Valor mensual
+                <span class="lr-v" id="liveMoney">—</span>
+              </div>
+              <div class="live-row done" style="opacity:1">
+                <span class="lr-i">↺</span> Se paga solo en
+                <span class="lr-v" id="livePay">—</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="live">
+            <div class="live-k"><i></i> Tus respuestas</div>
+            <div class="live-rows" id="liveRows">
+              <div class="live-row" data-for="category"><span class="lr-i">1</span> Proceso <span class="lr-v"></span></div>
+              <div class="live-row" data-for="volumen"><span class="lr-i">2</span> Volumen <span class="lr-v"></span></div>
+              <div class="live-row" data-for="tiempo"><span class="lr-i">3</span> Duración <span class="lr-v"></span></div>
+              <div class="live-row" data-for="detalle"><span class="lr-i">4</span> Detalle <span class="lr-v"></span></div>
+              <div class="live-row" data-for="sistemas"><span class="lr-i">5</span> Sistemas <span class="lr-v"></span></div>
+              <div class="live-row" data-for="frecuencia"><span class="lr-i">6</span> Frecuencia <span class="lr-v"></span></div>
+              <div class="live-row" data-for="excepciones"><span class="lr-i">7</span> Excepciones <span class="lr-v"></span></div>
+            </div>
+          </div>
+        </aside>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= NOSOTROS ================= -->
+  <section class="sec" id="nosotros" data-tone="dark">
+    <div class="wrap">
+      <div class="split-grid">
+        <div class="photo rv rv-left" data-cursor="LatAm">
+          <img src="images/imagen_latam.jpg" alt="Equipo de AutFlow trabajando con clientes en Latinoamérica"
+            loading="lazy" decoding="async" data-par="34">
+          <span class="photo-tag"><i></i> Equipos remotos en toda LatAm</span>
+        </div>
+
+        <div class="rv rv-right">
+          <span class="eyebrow">Nosotros</span>
+          <h2 style="margin:1.2rem 0 1rem">Un equipo pequeño, involucrado de verdad</h2>
+          <p class="lead" style="margin-bottom:1.8rem">
+            No queremos ser otro proveedor que entrega un flujo y desaparece. Queremos entender cómo trabaja tu equipo, construir algo que puedan usar y dejarlo funcionando de verdad.
+          </p>
+
+          <div class="vlist">
+            <div class="vitem">
+              <span class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg></span>
+              <div><b>El resultado importa más que la herramienta</b><p>No medimos nuestro trabajo por cuántos nodos, agentes o pantallas construimos. Lo medimos por el problema que deja de existir.</p></div>
+            </div>
+            <div class="vitem">
+              <span class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/><path d="M11 7h4a2 2 0 0 1 2 2v4"/></svg></span>
+              <div><b>Aprovechamos lo que ya tienes</b><p>Si tu Excel funciona, lo conectamos. Si tu CRM funciona, lo integramos. No te vendemos una migración porque sí.</p></div>
+            </div>
+            <div class="vitem">
+              <span class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.4 8.4 8 9 4.6-.6 8-4.6 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <div><b>Te dejamos el control</b><p>La solución y su documentación deben quedar claras para tu equipo. Evitamos crear dependencias innecesarias.</p></div>
+            </div>
+            <div class="vitem">
+              <span class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></span>
+              <div><b>Acompañamiento cuando lo necesites</b><p>Puedes continuar con soporte y ajustes después de la implementación. No te obligamos a contratar una mensualidad para que el proyecto sea útil.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ops-strip stagger" style="margin-top:clamp(2.4rem,5vw,4rem)">
+        <div class="ops-item"><b>Procesos</b><span>repetitivos y predecibles</span></div>
+        <div class="ops-item"><b>Integraciones</b><span>entre herramientas existentes</span></div>
+        <div class="ops-item"><b>IA</b><span>cuando aporta criterio o velocidad</span></div>
+        <div class="ops-item"><b>Control</b><span>humano donde realmente importa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="sec" id="faq" data-tone="dark">
+    <div class="wrap">
+      <div class="head head-center">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2 data-split>Lo que todos preguntan</h2>
+      </div>
+
+      <div class="faq-list rv">
+        <div class="faq-i">
+          <button class="faq-q" aria-expanded="false">¿Cuánto tiempo toma tener algo funcionando?<span class="pm"></span></button>
+          <div class="faq-a"><div><p>La mayoría de los primeros flujos quedan en producción entre 2 y 4 semanas desde el diagnóstico. Los paquetes más acotados salen en 1 o 2 semanas.</p></div></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" aria-expanded="false">¿Tengo que cambiar las herramientas que uso?<span class="pm"></span></button>
+          <div class="faq-a"><div><p>No. Trabajamos dentro de tu stack actual (CRM, hojas de cálculo, correo, WhatsApp, ERP) conectándolo con agentes e integraciones. Si algo ya funciona, no lo tocamos.</p></div></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" aria-expanded="false">¿Qué pasa si mi proceso cambia después?<span class="pm"></span></button>
+          <div class="faq-a"><div><p>Es lo esperable. Todas las opciones incluyen soporte post-lanzamiento: monitoreamos cada flujo y lo ajustamos cuando tu operación se mueve.</p></div></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" aria-expanded="false">¿Cómo manejan mis datos?<span class="pm"></span></button>
+          <div class="faq-a"><div><p>Definimos el acceso mínimo necesario y el recorrido de los datos antes de implementar. La arquitectura depende de las herramientas, permisos y requisitos de tu operación.</p></div></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" aria-expanded="false">¿Trabajan solo con empresas grandes?<span class="pm"></span></button>
+          <div class="faq-a"><div><p>No. Una empresa pequeña puede tener un problema que justifique automatizarlo. Lo importante es que el proceso tenga suficiente repetición, costo o impacto para que la solución tenga sentido.</p></div></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" aria-expanded="false">¿Cómo empiezo?<span class="pm"></span></button>
+          <div class="faq-a"><div><p>Cuéntanos qué proceso te está quitando tiempo. Revisamos el caso, te decimos qué vemos viable y, si no creemos que automatizarlo tenga sentido, también te lo diremos.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="sec" id="contacto" data-tone="dark">
+    <div class="wrap">
+      <div class="cta-panel rv rv-zoom">
+        <div class="orb orb-1" aria-hidden="true"></div>
+        <div class="orb orb-2" aria-hidden="true"></div>
+        <div class="grid-bg" aria-hidden="true"></div>
+        <span class="eyebrow">Siguiente paso</span>
+        <h2 data-split>¿Cuántas horas<br>vas a recuperar?</h2>
+        <p class="lead">Veinte minutos. Revisamos tu operación y te decimos qué automatizar primero
+          y qué no vale la pena tocar.</p>
+        <div class="cta-acts">
+          <a class="btn btn-primary btn-lg" data-magnet data-wa-topic="una oportunidad de automatización"
+            href="https://wa.me/573249192451"
+            target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+            Agendar por WhatsApp
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#cotizador">
+            Primero quiero un estimado
+            <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="cta-note">Respondemos en menos de 24 horas hábiles.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="ft">
+    <div class="wrap">
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <a class="brand" href="#inicio">
+            <img src="assets/logo.png" alt="" width="32" height="32">
+            <b style="color:#f3f7fd">AutFlow</b>
+          </a>
+          <p>Agentes de IA que automatizan la operación de tu negocio, dentro de las herramientas
+            que tu equipo ya usa.</p>
+        </div>
+        <div>
+          <h5>Navegación</h5>
+          <div class="ft-links">
+            <a href="#solucion">Solución</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#opciones">Opciones</a>
+            <a href="#cotizador">Cotizador</a>
+          </div>
+        </div>
+        <div>
+          <h5>Contacto</h5>
+          <div class="ft-links">
+            <a href="https://wa.me/573249192451" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#faq">Preguntas frecuentes</a>
+            <a href="#contacto">Agendar llamada</a>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bot">
+        <span>© <span data-year>2026</span> AutFlow. Todos los derechos reservados.</span>
+        <div class="ft-soc">
+          <a href="https://wa.me/573249192451" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+          </a>
+          <a href="#contacto" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><line x1="8" y1="10.5" x2="8" y2="16" stroke-linecap="round"/><circle cx="8" cy="7.3" r=".8" fill="currentColor" stroke="none"/><path d="M12 16v-3.2c0-1.4 1-2.3 2.2-2.3s2 .9 2 2.3V16" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#contacto" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".8" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Flotantes -->
+  <button class="to-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <a class="wa-float" href="https://wa.me/573249192451?text=Hola%20AutFlow%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+    target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+    <span>Escríbenos</span>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
