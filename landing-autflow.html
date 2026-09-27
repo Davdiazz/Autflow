@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0C111B">
+  <meta name="color-scheme" content="dark light">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>AutFlow — Automatización e integraciones para pymes en Latinoamérica</title>
+  <meta name="description"
+    content="AutFlow automatiza el trabajo manual de pequeñas y medianas empresas en Latinoamérica: facturas, reportes en Excel, correos y datos que se copian entre sistemas. Cotiza tu proceso en 2 minutos.">
+  <link rel="canonical" href="https://autflow.co/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:title" content="AutFlow — Automatización e integraciones para pymes">
+  <meta property="og:description" content="Automatizamos facturas, reportes, correos y datos que hoy se copian a mano entre sistemas.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Three.js r180 minificado y vendorizado (sin CDN en runtime) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./js/vendor/three/three.module.min.js",
+      "three/addons/": "./js/vendor/three/addons/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"AutFlow",
+    "description":"Automatización de procesos e integración de sistemas para pequeñas y medianas empresas.",
+    "areaServed":"Latinoamérica",
+    "serviceType":"Automatización de procesos",
+    "telephone":"+573249192451"
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#cotizador">Saltar al cotizador</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="hdr">
+    <div class="nav wrap">
+      <a class="brand" href="#inicio" aria-label="AutFlow, inicio">
+        <img src="assets/logo.png" alt="" width="30" height="25">
+        <b>AutFlow</b>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#como">Cómo trabajamos</a>
+        <a href="#cotizador">Cotizador</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <div class="nav-act">
+        <button class="lang-toggle" type="button" aria-label="Switch to English">
+          <span data-l="es" class="on">ES</span><span data-l="en">EN</span>
+        </button>
+        <a class="btn btn-primary btn-sm" data-wa-topic="una oportunidad de automatización"
+          href="https://wa.me/573249192451" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+          <span>Hablar por WhatsApp</span>
+        </a>
+        <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" aria-label="Menú" hidden>
+    <a class="dl" href="#soluciones">Soluciones</a>
+    <a class="dl" href="#como">Cómo trabajamos</a>
+    <a class="dl" href="#cotizador">Cotizador</a>
+    <a class="dl" href="#preguntas">Preguntas</a>
+    <a class="btn btn-primary btn-lg btn-block" data-wa-topic="una oportunidad de automatización"
+      href="https://wa.me/573249192451" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </div>
+
+  <main>
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio" data-tone="dark">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <p class="kicker">Automatización e integraciones para pymes · Latinoamérica</p>
+        <h1>Tú tienes la visión.<br><span>Nosotros, cómo hacerla realidad.</span></h1>
+        <p class="hero-sub">Automatizamos el trabajo manual de tu empresa: facturas que se digitan, reportes que se arman en Excel, correos que alguien clasifica y datos que se copian entre sistemas.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#cotizador">
+            Cotizar mi proceso
+            <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-quiet btn-lg" data-wa-topic="una oportunidad de automatización"
+            href="https://wa.me/573249192451" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+        <ul class="hero-facts">
+          <li><b>2 min</b> para una estimación aproximada</li>
+          <li><b>&lt; 24 h</b> hábiles para responderte</li>
+          <li><b>Tus herramientas</b> Excel, correo, CRM, ERP</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <!-- La escena 3D se encuadra sola dentro del marco. El SVG es
+             el respaldo cuando no hay WebGL. -->
+        <div class="arm-frame">
+          <div class="hand3d" id="hand3d" aria-hidden="true"></div>
+          <div class="robot-stage">
+            <svg class="robot-svg" viewBox="0 0 440 680" role="img" aria-label="Brazo robótico industrial">
+              <defs>
+                <linearGradient id="rbMetal" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#4a5b7d"/>
+                  <stop offset="55%" stop-color="#232f47"/>
+                  <stop offset="100%" stop-color="#121a2c"/>
+                </linearGradient>
+                <linearGradient id="rbMetalLight" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#6c81a6"/>
+                  <stop offset="100%" stop-color="#2c3a58"/>
+                </linearGradient>
+                <linearGradient id="rbAccent" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#5b7bff"/>
+                  <stop offset="100%" stop-color="#2855e8"/>
+                </linearGradient>
+                <radialGradient id="rbLensCore" cx="45%" cy="40%" r="65%">
+                  <stop offset="0%" stop-color="#e6ebff"/>
+                  <stop offset="45%" stop-color="#8ea4ff"/>
+                  <stop offset="100%" stop-color="#1a2f7a"/>
+                </radialGradient>
+                <radialGradient id="rbGroundGrad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#000" stop-opacity=".55"/>
+                  <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <g class="rb-root">
+                <ellipse class="rb-ground" cx="220" cy="616" rx="116" ry="15" fill="url(#rbGroundGrad)"/>
+
+                <!-- RobotBase -->
+                <g class="rb-piece rb-base">
+                  <ellipse cx="220" cy="548" rx="70" ry="12" fill="url(#rbMetalLight)"/>
+                  <rect x="150" y="548" width="140" height="58" rx="18" fill="url(#rbMetal)" stroke="rgba(91,123,255,.16)"/>
+                  <rect x="211" y="552" width="5" height="46" rx="2.5" fill="#fff" opacity=".14"/>
+                  <circle cx="182" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <circle cx="202" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <circle cx="238" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <circle cx="258" cy="580" r="3.4" fill="#0a0f1c"/>
+                  <rect x="272" y="588" width="18" height="8" rx="3" fill="#8ea4ff" opacity=".5"/>
+                </g>
+
+                <!-- RobotLowerJoint -->
+                <g class="rb-piece rb-lowerjoint">
+                  <rect x="203" y="510" width="34" height="42" rx="10" fill="url(#rbMetal)"/>
+                  <circle cx="220" cy="492" r="33" fill="url(#rbMetalLight)" stroke="rgba(91,123,255,.25)" stroke-width="1.2"/>
+                  <circle cx="220" cy="492" r="23" fill="none" stroke="#0d1424" stroke-width="2"/>
+                  <circle cx="220" cy="492" r="5" fill="#5b7bff" opacity=".55"/>
+                </g>
+
+                <!-- Brazo articulado: brazo inferior, codo, brazo superior, cuello, cabezal, lente -->
+                <g class="rb-armchain">
+                  <!-- RobotLowerArm -->
+                  <g class="rb-piece rb-lowerarm">
+                    <rect x="194" y="372" width="52" height="140" rx="22" fill="url(#rbMetal)" stroke="rgba(255,255,255,.06)"/>
+                    <rect x="207" y="382" width="6" height="120" rx="3" fill="#fff" opacity=".12"/>
+                    <circle cx="220" cy="400" r="3" fill="#0a0f1c"/>
+                    <circle cx="220" cy="460" r="3" fill="#0a0f1c"/>
+                  </g>
+
+                  <!-- RobotMiddleJoint -->
+                  <g class="rb-piece rb-midjoint">
+                    <circle cx="196" cy="366" r="26" fill="url(#rbMetalLight)" stroke="rgba(91,123,255,.25)" stroke-width="1.1"/>
+                    <circle cx="196" cy="366" r="17" fill="none" stroke="#0d1424" stroke-width="2"/>
+                    <circle cx="196" cy="366" r="4" fill="#5b7bff" opacity=".5"/>
+                  </g>
+
+                  <!-- RobotUpperArm -->
+                  <g class="rb-piece rb-upperarm">
+                    <rect x="173" y="262" width="46" height="108" rx="20" fill="url(#rbMetal)" stroke="rgba(255,255,255,.06)"/>
+                    <rect x="188" y="270" width="5" height="88" rx="2.5" fill="#fff" opacity=".12"/>
+                    <circle cx="196" cy="286" r="2.6" fill="#0a0f1c"/>
+                    <circle cx="196" cy="330" r="2.6" fill="#0a0f1c"/>
+                  </g>
+
+                  <!-- RobotNeck -->
+                  <g class="rb-piece rb-neck">
+                    <rect x="199" y="222" width="34" height="46" rx="14" fill="url(#rbMetalLight)" stroke="rgba(91,123,255,.2)"/>
+                  </g>
+
+                  <!-- RobotHead -->
+                  <g class="rb-piece rb-head">
+                    <rect x="159" y="150" width="114" height="76" rx="28" fill="url(#rbMetal)" stroke="rgba(91,123,255,.2)"/>
+                    <rect x="176" y="160" width="46" height="6" rx="3" fill="#fff" opacity=".1"/>
+
+                    <!-- RobotLens -->
+                    <g class="rb-piece rb-lens">
+                      <circle cx="185" cy="188" r="19" fill="url(#rbMetal)" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+                      <circle cx="185" cy="188" r="12" fill="#060a13"/>
+                      <circle class="rb-lens-core" cx="185" cy="188" r="6.4" fill="url(#rbLensCore)"/>
+                      <circle class="rb-activation-ring" cx="185" cy="188" r="20"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.6" style="--sx:-22px;--sy:-18px;--sd:0s"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.4" style="--sx:20px;--sy:-22px;--sd:.12s"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.5" style="--sx:-14px;--sy:20px;--sd:.22s"/>
+                      <circle class="rb-spark" cx="185" cy="188" r="1.3" style="--sx:24px;--sy:12px;--sd:.05s"/>
+                    </g>
+                  </g>
+                </g>
+
+                <!-- RobotPanels -->
+                <g class="rb-piece rb-panels">
+                  <rect x="175" y="300" width="22" height="9" rx="3" fill="url(#rbAccent)" opacity=".8"/>
+                  <rect x="248" y="160" width="24" height="9" rx="3" fill="#0d1424"/>
+                  <rect x="248" y="160" width="24" height="9" rx="3" fill="none" stroke="rgba(91,123,255,.35)"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= COTIZADOR ================= -->
+  <section class="sec cot" id="cotizador" data-tone="dark">
+    <div class="wrap">
+      <div class="sec-head cot-head">
+        <div>
+          <p class="kicker">Cotizador</p>
+          <h2 tabindex="-1">¿Cuánto puede costar<br>resolver tu problema?</h2>
+        </div>
+        <p class="sec-lead">Siete preguntas y te damos una estimación aproximada en dólares. No es una cotización: el valor real lo definimos contigo después del diagnóstico.</p>
+      </div>
+
+      <form class="calc" id="calc" novalidate>
+
+        <div class="calc-main">
+          <div class="calc-top">
+            <div class="ring" aria-hidden="true">
+              <svg viewBox="0 0 46 46">
+                <circle class="rbg" cx="23" cy="23" r="20"></circle>
+                <circle class="rfg" cx="23" cy="23" r="20"></circle>
+              </svg>
+              <b>1</b>
+            </div>
+            <div class="calc-top-txt" aria-live="polite">
+              <b id="calcTitle">Paso 1 de 7</b>
+              <span id="calcSub">Toma menos de 2 minutos</span>
+            </div>
+            <button type="button" class="calc-reset" id="calcReset">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 3v6h6"/></svg>
+              <span>Reiniciar</span>
+            </button>
+          </div>
+
+          <div class="calc-body">
+
+            <!-- 1 -->
+            <div class="cstep on" data-step="1" data-sub="Elige lo que más se parezca a tu caso">
+              <h3>¿Qué proceso quieres quitarte de encima?</h3>
+              <p class="chint">Si ninguna encaja perfecto, elige la más cercana.</p>
+
+              <div class="cat-layout">
+                <div class="copts cats" data-field="category">
+                  <button type="button" class="copt cat" data-value="documentos" data-points="2">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+                    <span class="ct">Procesar documentos</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="excel" data-points="1">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></span>
+                    <span class="ct">Excel y reportes</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="web" data-points="2">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span>
+                    <span class="ct">Tareas en páginas web</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="correos" data-points="1">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></span>
+                    <span class="ct">Correos electrónicos</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="integracion" data-points="3">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.3 8.2l3.5 7.5M16.7 8.2l-3.5 7.5"/></svg></span>
+                    <span class="ct">Conectar sistemas</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="chatbot" data-points="3">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12Z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></span>
+                    <span class="ct">Atención a clientes</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="escritorio" data-points="3">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+                    <span class="ct">Apps de escritorio</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="combinacion" data-points="3">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.8"/></svg></span>
+                    <span class="ct">Varias cosas a la vez</span>
+                  </button>
+                  <button type="button" class="copt cat" data-value="no_seguro" data-points="2">
+                    <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 0 1 5 .9c0 1.7-2.5 2.3-2.5 3.8M12 17h.01"/></svg></span>
+                    <span class="ct">Aún no lo tengo claro</span>
+                  </button>
+                </div>
+                <div class="cprev" aria-hidden="true">
+                  <div class="pv pv-idle on" data-for="idle">
+                    <div class="pv-idle-in">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5 19 13l-4.6.9 2.9 5.4-2.3 1.2-2.9-5.4L9 18.5Z"/></svg>
+                      <b>Pasa el cursor por una opción</b>
+                      <span>y te mostramos cómo se ve ese trabajo automatizado</span>
+                    </div>
+                  </div>
+
+                  <div class="pv" data-for="correos">
+                    <div class="pv-bar"><i></i><i></i><i></i><span>Bandeja de entrada</span><em>24 nuevos</em></div>
+                    <ul class="mail">
+                      <li><span class="av">PA</span><div><b>Proveedor Andes</b><small>Factura FE-4821 adjunta</small></div><span class="tag">Facturas</span></li>
+                      <li><span class="av">LM</span><div><b>Laura Méndez</b><small>Solicitud de cotización</small></div><span class="tag">Ventas</span></li>
+                      <li><span class="av">TR</span><div><b>Transportes Rueda</b><small>Guía de despacho #1193</small></div><span class="tag">Logística</span></li>
+                    </ul>
+                    <p class="pv-cap">Cada correo se lee, se clasifica y se responde solo.</p>
+                  </div>
+
+                  <div class="pv" data-for="documentos">
+                    <div class="doc">
+                      <div class="doc-page"><i class="w70"></i><i class="w40"></i><i></i><i class="w85"></i><i class="w55"></i><i></i><i class="w60"></i><span class="scan"></span></div>
+                      <dl class="doc-out">
+                        <div><dt>ID fiscal</dt><dd>900.418.227-3</dd></div>
+                        <div><dt>Fecha</dt><dd>14/03/2026</dd></div>
+                        <div><dt>Total</dt><dd>US$1,284.50</dd></div>
+                      </dl>
+                    </div>
+                    <p class="pv-cap">Los datos del PDF llegan solos a tu sistema.</p>
+                  </div>
+
+                  <div class="pv" data-for="excel">
+                    <table class="sheet">
+                      <tr><th></th><th>Ene</th><th>Feb</th><th>Mar</th></tr>
+                      <tr><td>Norte</td><td>18,4</td><td>21,0</td><td>24,7</td></tr>
+                      <tr><td>Centro</td><td>32,1</td><td>29,8</td><td>35,2</td></tr>
+                      <tr><td>Sur</td><td>12,6</td><td>15,3</td><td>17,9</td></tr>
+                    </table>
+                    <div class="bars"><i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:30%"></i><i style="--h:48%"></i><i style="--h:84%"></i><i style="--h:56%"></i><i style="--h:72%"></i></div>
+                    <p class="pv-cap">El reporte del lunes ya está listo el lunes.</p>
+                  </div>
+
+                  <div class="pv" data-for="web">
+                    <div class="pv-bar"><i></i><i></i><i></i><span class="url">portal.proveedor.com/pedidos</span></div>
+                    <div class="form">
+                      <label>Cliente <span class="typed t1">Ferretería El Sol</span></label>
+                      <label>Referencia <span class="typed t2">PED-20931</span></label>
+                      <span class="fbtn">Enviar pedido</span>
+                      <svg class="ptr" viewBox="0 0 24 24" fill="#fff" stroke="#0b1120" stroke-width="1.2"><path d="M5 3l14 9-6.5 1.3L9.3 20Z"/></svg>
+                    </div>
+                    <p class="pv-cap">Llena formularios y descarga reportes por ti.</p>
+                  </div>
+
+                  <div class="pv" data-for="integracion">
+                    <div class="flow">
+                      <span class="node">CRM</span><span class="link"><i></i></span>
+                      <span class="node">ERP</span><span class="link"><i></i></span>
+                      <span class="node">Sheets</span>
+                    </div>
+                    <div class="flow-log"><span>Cliente creado en CRM</span><span>Pedido sincronizado en ERP</span><span>Inventario actualizado</span></div>
+                    <p class="pv-cap">Tus sistemas se hablan sin copiar y pegar.</p>
+                  </div>
+
+                  <div class="pv" data-for="chatbot">
+                    <div class="chat">
+                      <p class="in">Hola, ¿tienen cita disponible el jueves?</p>
+                      <p class="out">¡Claro! Tengo 10:00 a. m. o 3:00 p. m. ¿Cuál te sirve?</p>
+                      <p class="in">A las 3, porfa.</p>
+                      <p class="out typing"><i></i><i></i><i></i></p>
+                    </div>
+                    <p class="pv-cap">Responde al instante y agenda sin esperas.</p>
+                  </div>
+
+                  <div class="pv" data-for="escritorio">
+                    <div class="win">
+                      <div class="win-t">Registro de facturas · ERP</div>
+                      <div class="win-b">
+                        <span class="row"><em>Proveedor</em><b>Andes S.A.S.</b></span>
+                        <span class="row"><em>Valor</em><b>US$1,284.50</b></span>
+                        <span class="prog"><i></i></span>
+                      </div>
+                    </div>
+                    <p class="pv-cap">Trabaja en tu programa como lo haría una persona.</p>
+                  </div>
+
+                  <div class="pv" data-for="combinacion">
+                    <ol class="chain">
+                      <li>Llega el correo</li>
+                      <li>Se lee la factura</li>
+                      <li>Se registra en Excel</li>
+                      <li>Se avisa al equipo</li>
+                    </ol>
+                    <p class="pv-cap">Un solo flujo de principio a fin.</p>
+                  </div>
+
+                  <div class="pv" data-for="no_seguro">
+                    <ul class="check">
+                      <li>¿Se repite cada semana?</li>
+                      <li>¿Sigue siempre los mismos pasos?</li>
+                      <li>¿Le quita horas a tu equipo?</li>
+                    </ul>
+                    <p class="pv-cap">Si respondes sí a alguna, hay algo por automatizar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="cstep" data-step="2" data-sub="Un estimado es suficiente">
+              <h3>¿Cuántas veces pasa al mes?</h3>
+              <p class="chint">No necesitas el número exacto.</p>
+              <div class="copts list" data-field="volumen">
+                <button type="button" class="copt" data-value="v1" data-points="0">Menos de 10 veces</button>
+                <button type="button" class="copt" data-value="v2" data-points="1">Entre 10 y 50 veces</button>
+                <button type="button" class="copt" data-value="v3" data-points="2">Entre 50 y 200 veces</button>
+                <button type="button" class="copt" data-value="v4" data-points="3">Entre 200 y 1.000 veces</button>
+                <button type="button" class="copt" data-value="v5" data-points="4">Más de 1.000 veces</button>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="cstep" data-step="3" data-sub="De principio a fin, una sola vez">
+              <h3>¿Cuánto tarda una persona hoy?</h3>
+              <p class="chint">Con esto calculamos las horas que recuperas.</p>
+              <div class="copts list" data-field="tiempo">
+                <button type="button" class="copt" data-value="t1" data-points="0">Menos de 5 minutos</button>
+                <button type="button" class="copt" data-value="t2" data-points="1">Entre 5 y 15 minutos</button>
+                <button type="button" class="copt" data-value="t3" data-points="2">Entre 15 y 30 minutos</button>
+                <button type="button" class="copt" data-value="t4" data-points="3">Entre 30 y 60 minutos</button>
+                <button type="button" class="copt" data-value="t5" data-points="4">Más de una hora</button>
+              </div>
+            </div>
+
+            <!-- 4 adaptativo -->
+            <div class="cstep" data-step="4" data-adaptive data-sub="Una pregunta según tu caso">
+
+              <div class="cvariant" data-category="documentos">
+                <h3>¿Qué documentos procesas?</h3>
+                <p class="chint">Los escaneados y las imágenes requieren lectura con IA.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="pdf_digital" data-points="0">PDF digitales</button>
+                  <button type="button" class="copt" data-value="pdf_escaneado" data-points="2">PDF escaneados</button>
+                  <button type="button" class="copt" data-value="imagenes" data-points="2">Imágenes o fotos</button>
+                  <button type="button" class="copt" data-value="word" data-points="0">Documentos Word</button>
+                  <button type="button" class="copt" data-value="mixto" data-points="3">De todo un poco</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="excel">
+                <h3>¿Qué tan complejos son los archivos?</h3>
+                <p class="chint">Los formatos que cambian son lo que más trabajo da.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="sencillo" data-points="0">Un archivo sencillo</button>
+                  <button type="button" class="copt" data-value="varios" data-points="1">Varios archivos</button>
+                  <button type="button" class="copt" data-value="plantillas" data-points="2">Plantillas con varias hojas</button>
+                  <button type="button" class="copt" data-value="variables" data-points="4">Formatos que cambian seguido</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="1">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="web">
+                <h3>¿La página pide iniciar sesión?</h3>
+                <p class="chint">El doble factor cambia bastante el enfoque técnico.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="no" data-points="0">No, es pública</button>
+                  <button type="button" class="copt" data-value="usuario" data-points="2">Sí, usuario y contraseña</button>
+                  <button type="button" class="copt" data-value="mfa" data-points="4">Sí, con MFA o 2FA</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="correos">
+                <h3>¿Qué tan parecidos son los correos?</h3>
+                <p class="chint">Entre más varíen, más criterio necesita el agente.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="fijo" data-points="0">Siempre el mismo formato</button>
+                  <button type="button" class="copt" data-value="variable" data-points="2">Cambian bastante</button>
+                  <button type="button" class="copt" data-value="adjuntos" data-points="3">Hay que leer los adjuntos</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="1">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="integracion">
+                <h3>¿Los sistemas tienen API?</h3>
+                <p class="chint">Si no la hay, automatizamos la interfaz directamente.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="documentada" data-points="1">Sí, con documentación</button>
+                  <button type="button" class="copt" data-value="sin_doc" data-points="3">Sí, pero sin documentar</button>
+                  <button type="button" class="copt" data-value="sin_api" data-points="5">No tienen API</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="chatbot">
+                <h3>¿Qué tan variadas son las consultas?</h3>
+                <p class="chint">Conectarse a tus datos es lo que lo vuelve realmente útil.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="fijas" data-points="1">Preguntas frecuentes fijas</button>
+                  <button type="button" class="copt" data-value="contexto" data-points="3">Conversación con contexto</button>
+                  <button type="button" class="copt" data-value="crm" data-points="5">Debe consultar el CRM o la base de datos</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="escritorio">
+                <h3>¿La aplicación permite integrarse?</h3>
+                <p class="chint">Una API, una base de datos o archivos exportables.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="disponible" data-points="1">Sí, hay por dónde entrar</button>
+                  <button type="button" class="copt" data-value="solo_gui" data-points="4">No, solo la pantalla</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="combinacion">
+                <h3>¿Cuántas tareas distintas combina?</h3>
+                <p class="chint">Cada tarea suma un tramo al flujo.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="dos" data-points="2">Dos tareas</button>
+                  <button type="button" class="copt" data-value="tres" data-points="4">Tres tareas</button>
+                  <button type="button" class="copt" data-value="cuatro" data-points="6">Cuatro o más</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="3">No estoy seguro</button>
+                </div>
+              </div>
+
+              <div class="cvariant" data-category="no_seguro">
+                <h3>¿Qué tan repetitivo es el proceso?</h3>
+                <p class="chint">Entre más predecible, más fácil de automatizar.</p>
+                <div class="copts list" data-field="detalle">
+                  <button type="button" class="copt" data-value="repetitivo" data-points="0">Siempre igual, muy predecible</button>
+                  <button type="button" class="copt" data-value="algo" data-points="2">Algo variable</button>
+                  <button type="button" class="copt" data-value="mucho" data-points="4">Bastante variable</button>
+                  <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="cstep" data-step="5" data-sub="Cada sistema es un punto de conexión">
+              <h3>¿Con cuántos sistemas debe hablar?</h3>
+              <p class="chint">Por ejemplo: Excel → correo → página web → ERP.</p>
+              <div class="copts list" data-field="sistemas">
+                <button type="button" class="copt" data-value="s1" data-points="0">Uno solo</button>
+                <button type="button" class="copt" data-value="s2" data-points="1">Dos</button>
+                <button type="button" class="copt" data-value="s3" data-points="2">Entre tres y cuatro</button>
+                <button type="button" class="copt" data-value="s4" data-points="4">Cinco o más</button>
+                <button type="button" class="copt" data-value="no_seguro" data-points="2">No estoy seguro</button>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="cstep" data-step="6" data-sub="Define la infraestructura que necesita">
+              <h3>¿Cada cuánto debería ejecutarse?</h3>
+              <div class="copts list" data-field="frecuencia">
+                <button type="button" class="copt" data-value="manual" data-points="0">Solo cuando yo lo pida</button>
+                <button type="button" class="copt" data-value="semanal" data-points="0">Una vez por semana</button>
+                <button type="button" class="copt" data-value="diaria" data-points="1">Todos los días</button>
+                <button type="button" class="copt" data-value="varias" data-points="2">Varias veces al día</button>
+                <button type="button" class="copt" data-value="continua" data-points="4">24/7, sin parar</button>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="cstep" data-step="7" data-sub="Última pregunta">
+              <h3>¿Qué tan seguido hay casos raros?</h3>
+              <p class="chint">Los que no siguen la regla y alguien tiene que revisar aparte.</p>
+              <div class="copts list" data-field="excepciones">
+                <button type="button" class="copt" data-value="casi_nunca" data-points="0">Casi nunca, siempre es igual</button>
+                <button type="button" class="copt" data-value="algunas" data-points="1">Dos o tres casos conocidos</button>
+                <button type="button" class="copt" data-value="muchas" data-points="3">Muchos casos borde</button>
+                <button type="button" class="copt" data-value="no_seguro" data-points="1">No estoy seguro</button>
+              </div>
+            </div>
+
+            <!-- resultado -->
+            <div class="cstep cres" data-step="result">
+              <span class="cres-tier" id="resTier">Complejidad</span>
+              <div class="cres-price" id="resPrice">$0</div>
+              <div class="cres-cur">dólares (USD) · estimación aproximada, no es una cotización</div>
+              <dl class="cres-sum" id="resSum"></dl>
+              <a class="btn btn-primary btn-lg btn-block" id="resWa"
+                href="https://wa.me/573249192451" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+                Quiero revisar este caso con AutFlow
+              </a>
+              <p class="cres-note">Es solo una referencia. El valor final depende del alcance, las integraciones y tu operación, y lo acordamos contigo antes de empezar. Somos un equipo pequeño: buscamos que la inversión tenga sentido para tu empresa.</p>
+            </div>
+
+          </div>
+
+          <div class="calc-nav">
+            <button type="button" class="btn btn-quiet hid" id="calcBack">Atrás</button>
+            <button type="button" class="btn btn-primary" id="calcNext" disabled>Siguiente</button>
+          </div>
+        </div>
+
+        <aside class="calc-side" aria-label="Resumen del estimado">
+          <div class="live">
+            <div class="live-k">Estimación aproximada</div>
+            <div class="live-v" id="livePrice">—</div>
+            <div class="live-s" id="liveHint">Responde 3 preguntas para ver una estimación</div>
+            <div class="live-bar"><i id="liveBar"></i></div>
+          </div>
+
+          <div class="live">
+            <div class="live-k">Lo que recuperas <span class="live-note">(supuesto: US$5 por hora)</span></div>
+            <dl class="live-rows">
+              <div class="live-row"><dt>Horas al mes</dt><dd id="liveHours">—</dd></div>
+              <div class="live-row"><dt>Valor mensual</dt><dd id="liveMoney">—</dd></div>
+              <div class="live-row"><dt>Se paga solo en</dt><dd id="livePay">—</dd></div>
+            </dl>
+          </div>
+
+          <div class="live">
+            <div class="live-k">Tus respuestas</div>
+            <div class="live-rows" id="liveRows">
+              <div class="live-row" data-for="category"><span class="lr-i">1</span> Proceso <span class="lr-v"></span></div>
+              <div class="live-row" data-for="volumen"><span class="lr-i">2</span> Volumen <span class="lr-v"></span></div>
+              <div class="live-row" data-for="tiempo"><span class="lr-i">3</span> Duración <span class="lr-v"></span></div>
+              <div class="live-row" data-for="detalle"><span class="lr-i">4</span> Detalle <span class="lr-v"></span></div>
+              <div class="live-row" data-for="sistemas"><span class="lr-i">5</span> Sistemas <span class="lr-v"></span></div>
+              <div class="live-row" data-for="frecuencia"><span class="lr-i">6</span> Frecuencia <span class="lr-v"></span></div>
+              <div class="live-row" data-for="excepciones"><span class="lr-i">7</span> Excepciones <span class="lr-v"></span></div>
+            </div>
+          </div>
+        </aside>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= SLIDES =================
+       Con JavaScript empiezan ocultas y se abren desde el menú (main.js §7).
+       Sin JavaScript se ven como secciones normales. -->
+  <div class="slides" id="slides">
+
+    <!-- ========== SOLUCIONES ========== -->
+    <section class="sec slide" id="soluciones" data-tone="light" data-title="Soluciones">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="kicker">Soluciones</p>
+            <h2 tabindex="-1">¿Te suena alguno<br>de estos problemas?</h2>
+          </div>
+          <p class="sec-lead">Si alguno se repite en tu empresa, probablemente se puede automatizar. Esto es lo que hacemos en cada caso.</p>
+        </div>
+
+        <div class="sol-table" role="table" aria-label="Problemas y soluciones">
+          <div class="sol-row sol-headrow" role="row">
+            <span role="columnheader">El problema</span>
+            <span role="columnheader">Qué hacemos</span>
+            <span role="columnheader">Qué cambia</span>
+          </div>
+          <div class="sol-row rv" role="row">
+            <span role="cell" class="sol-p"><i>01</i>Facturas y documentos que alguien digita a mano</span>
+            <span role="cell">Leemos los PDF, escaneos o fotos y llevamos los datos a tu sistema contable o a Excel.</span>
+            <span role="cell" class="sol-r">Menos digitación y menos errores de transcripción.</span>
+          </div>
+          <div class="sol-row rv" role="row">
+            <span role="cell" class="sol-p"><i>02</i>Reportes que cada semana se arman copiando de varios archivos</span>
+            <span role="cell">Consolidamos las fuentes y generamos el reporte de forma automática.</span>
+            <span role="cell" class="sol-r">El reporte está listo cuando lo necesitas.</span>
+          </div>
+          <div class="sol-row rv" role="row">
+            <span role="cell" class="sol-p"><i>03</i>Clientes que escriben por WhatsApp o correo y esperan respuesta</span>
+            <span role="cell">Respondemos las consultas frecuentes y pasamos a una persona las que necesitan criterio.</span>
+            <span role="cell" class="sol-r">Respuestas inmediatas sin perder el trato humano.</span>
+          </div>
+          <div class="sol-row rv" role="row">
+            <span role="cell" class="sol-p"><i>04</i>Datos que se copian entre el CRM, el ERP y las hojas de cálculo</span>
+            <span role="cell">Conectamos tus sistemas para que la información viaje sola, con validaciones.</span>
+            <span role="cell" class="sol-r">Una sola versión de los datos, sin doble trabajo.</span>
+          </div>
+          <div class="sol-row rv" role="row">
+            <span role="cell" class="sol-p"><i>05</i>Tareas repetitivas en portales web: descargas, cargues, consultas</span>
+            <span role="cell">Automatizamos los pasos dentro del portal, incluso cuando no tiene API.</span>
+            <span role="cell" class="sol-r">Tu equipo deja de hacer clics repetitivos.</span>
+          </div>
+        </div>
+
+        <p class="sol-foot">Primero entendemos el proceso. Después elegimos la herramienta, no al revés.</p>
+      </div>
+    </section>
+
+    <!-- ========== CÓMO TRABAJAMOS ========== -->
+    <section class="sec slide" id="como" data-tone="dark" data-title="Cómo trabajamos">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="kicker">Cómo trabajamos</p>
+            <h2 tabindex="-1">Así se ve una<br>automatización por dentro.</h2>
+          </div>
+          <p class="sec-lead">Ejemplo ilustrativo: una factura llega por correo y termina registrada sin que nadie la digite.</p>
+        </div>
+
+        <div class="demo" id="demo">
+          <ol class="demo-flow">
+            <li class="dstep">
+              <span class="dn">1 · Llega</span>
+              <div class="dcard">
+                <p class="dmeta">Correo · 08:14</p>
+                <b>Proveedor Andes S.A.S.</b>
+                <p>Adjunto factura FE-4821</p>
+                <span class="dfile">FE-4821.pdf</span>
+              </div>
+            </li>
+            <li class="dstep">
+              <span class="dn">2 · Se lee</span>
+              <div class="dcard">
+                <dl class="dfields">
+                  <div><dt>ID fiscal</dt><dd>900.418.227-3</dd></div>
+                  <div><dt>Fecha</dt><dd>14/03/2026</dd></div>
+                  <div><dt>Total</dt><dd>US$1,284.50</dd></div>
+                </dl>
+              </div>
+            </li>
+            <li class="dstep">
+              <span class="dn">3 · Se registra</span>
+              <div class="dcard">
+                <table class="dsheet">
+                  <tr><th>Factura</th><th>Total</th></tr>
+                  <tr><td>FE-4819</td><td>US$842.00</td></tr>
+                  <tr><td>FE-4820</td><td>US$315.90</td></tr>
+                  <tr class="dnew"><td>FE-4821</td><td>US$1,284.50</td></tr>
+                </table>
+              </div>
+            </li>
+            <li class="dstep">
+              <span class="dn">4 · Se avisa</span>
+              <div class="dcard">
+                <p class="dmeta">Mensaje al equipo</p>
+                <p><b>Factura FE-4821 registrada.</b> Vence el 13/04. Sin diferencias con la orden de compra.</p>
+              </div>
+            </li>
+          </ol>
+          <button type="button" class="btn btn-quiet btn-sm demo-replay" id="demoReplay">Ver de nuevo</button>
+        </div>
+
+        <div class="method">
+          <h3 class="method-t">El método, en cuatro pasos</h3>
+          <ol class="method-list">
+            <li class="rv">
+              <span class="m-when">Semana 1</span>
+              <h4>Diagnóstico</h4>
+              <p>Una llamada de 20 minutos y una revisión del proceso.</p>
+              <p class="m-out">Recibes: qué automatizar primero y una propuesta de valor.</p>
+            </li>
+            <li class="rv">
+              <span class="m-when">Semanas 1–2</span>
+              <h4>Diseño</h4>
+              <p>Definimos qué hace el sistema y qué sigue revisando una persona.</p>
+              <p class="m-out">Recibes: el flujo aprobado antes de construirlo.</p>
+            </li>
+            <li class="rv">
+              <span class="m-when">Semanas 2–3</span>
+              <h4>Construcción</h4>
+              <p>Lo integramos en tus herramientas actuales, sin migrar nada.</p>
+              <p class="m-out">Recibes: pruebas con tus datos reales.</p>
+            </li>
+            <li class="rv">
+              <span class="m-when">Semanas 3–4</span>
+              <h4>Puesta en marcha</h4>
+              <p>Salimos a producción, medimos y ajustamos.</p>
+              <p class="m-out">Recibes: documentación y soporte.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PREGUNTAS ========== -->
+    <section class="sec slide" id="preguntas" data-tone="light" data-title="Preguntas">
+      <div class="wrap faq-grid">
+        <div class="sec-head faq-head">
+          <div>
+            <p class="kicker">Preguntas frecuentes</p>
+            <h2 tabindex="-1">Antes de<br>escribirnos.</h2>
+          </div>
+          <p class="sec-lead">Si tu duda no está aquí, respondemos por WhatsApp en menos de 24 horas hábiles.</p>
+          <a class="btn btn-primary" data-wa-topic="una duda antes de empezar" href="https://wa.me/573249192451" target="_blank" rel="noopener">Hacer una pregunta</a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-i">
+            <button class="faq-q" aria-expanded="false">¿Cuánto cuesta?<span class="pm" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Depende del proceso: cuántas veces se repite, cuántos sistemas hay que conectar y qué tantas excepciones tiene. El cotizador te da una estimación aproximada en dólares y el valor real lo acordamos contigo después del diagnóstico. Somos un equipo pequeño, así que los proyectos se ajustan al tamaño de tu empresa.</p></div></div>
+          </div>
+          <div class="faq-i">
+            <button class="faq-q" aria-expanded="false">¿Cuánto tiempo toma tener algo funcionando?<span class="pm" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Normalmente entre 2 y 4 semanas desde el diagnóstico. Los procesos más acotados, en 1 o 2.</p></div></div>
+          </div>
+          <div class="faq-i">
+            <button class="faq-q" aria-expanded="false">¿Tengo que cambiar las herramientas que uso?<span class="pm" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>No. Trabajamos dentro de lo que ya usas: Excel o Google Sheets, correo, WhatsApp, tu CRM o tu ERP. Si algo funciona, no lo tocamos.</p></div></div>
+          </div>
+          <div class="faq-i">
+            <button class="faq-q" aria-expanded="false">¿Qué pasa con mis datos?<span class="pm" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Pedimos solo el acceso necesario y definimos contigo por dónde viaja la información antes de implementar. Todo queda documentado.</p></div></div>
+          </div>
+          <div class="faq-i">
+            <button class="faq-q" aria-expanded="false">¿Y si después cambia mi proceso?<span class="pm" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Es lo normal. Con el acompañamiento monitoreamos el flujo y lo ajustamos. Sin él, te queda la documentación para hacerlo o para pedirnos un ajuste puntual.</p></div></div>
+          </div>
+          <div class="faq-i">
+            <button class="faq-q" aria-expanded="false">¿Y si no vale la pena automatizarlo?<span class="pm" aria-hidden="true"></span></button>
+            <div class="faq-a"><div><p>Te lo decimos en el diagnóstico. Si el proceso no se repite lo suficiente o la inversión no tiene sentido, preferimos decírtelo antes de cobrarte.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="ft" data-tone="dark">
+    <div class="wrap ft-grid">
+      <div class="ft-brand">
+        <a class="brand" href="#inicio">
+          <img src="assets/logo.png" alt="" width="30" height="25">
+          <b>AutFlow</b>
+        </a>
+        <p>Automatizamos el trabajo repetitivo de pequeñas y medianas empresas, dentro de las herramientas que ya usan.</p>
+      </div>
+      <nav class="ft-links" aria-label="Pie de página">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#como">Cómo trabajamos</a>
+        <a href="#cotizador">Cotizador</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <div class="ft-contact">
+        <a class="btn btn-quiet" data-wa-topic="una oportunidad de automatización" href="https://wa.me/573249192451" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg> WhatsApp · +57 324 919 2451
+        </a>
+        <p>Respondemos en menos de 24 horas hábiles.</p>
+      </div>
+    </div>
+    <div class="wrap ft-bot">
+      <span>© <span data-year>2026</span> AutFlow · Desde Colombia para Latinoamérica.</span>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa-topic="una oportunidad de automatización"
+    href="https://wa.me/573249192451" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.57-.36.76-.36h.54c.18 0 .42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.59.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.26.09 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.18 1.38Z"/></svg>
+  </a>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/robot-hand/boot.js"></script>
+  <script>
+    /* Abierto con doble clic (file://): el navegador bloquea los módulos 3D. */
+    if (location.protocol === 'file:') {
+      document.querySelector('.hero-visual').classList.add('no-3d');
+      var n = document.createElement('div');
+      n.setAttribute('role', 'status');
+      n.className = 'file-note';
+      n.innerHTML = '<b>Vista sin el brazo 3D.</b> Ábrela desde un servidor: <b>docker compose up</b> y entra a http://localhost:8080.';
+      document.body.appendChild(n);
+    }
+  </script>
+</body>
+
+</html>
