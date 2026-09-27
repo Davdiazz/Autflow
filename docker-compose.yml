@@ -1,7 +1,0 @@
-services:
-  autflow:
-    build: .
-    container_name: autflow-landing
-    ports:
-      - "8080:80"
-    restart: unless-stopped
