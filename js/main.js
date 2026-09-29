@@ -145,8 +145,15 @@
   (() => {
     const wa = $('.wa-float');
     const hero = $('#inicio');
+    const ft = $('.ft-bot');
     if (!wa || !hero) return;
-    onScroll(() => wa.classList.toggle('on', hero.getBoundingClientRect().bottom < innerHeight * 0.4));
+    /* Aparece pasado el inicio y se retira al llegar al pie, que ya
+       tiene su propio WhatsApp (así no tapa los íconos sociales). */
+    onScroll(() => {
+      const past = hero.getBoundingClientRect().bottom < innerHeight * 0.4;
+      const atFoot = ft && ft.getBoundingClientRect().top < innerHeight - 40;
+      wa.classList.toggle('on', past && !atFoot);
+    });
   })();
   $$('[data-year]').forEach((e) => { e.textContent = new Date().getFullYear(); });
 

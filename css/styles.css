@@ -954,3 +954,24 @@ h2[tabindex]:focus{ outline:none; }
 .lang-toggle:hover span:not(.on){ color:var(--ivory); }
 .hdr.on-light .lang-toggle:hover span:not(.on){ color:var(--graphite); }
 @media (pointer:coarse){ .lang-toggle{ height:44px; } }
+
+/* ---------- Redes sociales ---------- */
+.social{ display:flex; gap:var(--s-2); }
+.social a{
+  display:grid; place-items:center;
+  width:44px; height:44px;
+  border:1px solid rgba(245,245,242,.14);
+  border-radius:var(--r-md);
+  color:var(--gray);
+  transition:color var(--d-hover) var(--ease), border-color var(--d-hover) var(--ease), background-color var(--d-hover) var(--ease);
+}
+.social svg{ width:20px; height:20px; }
+.social a:hover{ color:var(--ivory); border-color:rgba(245,245,242,.4); background:var(--graphite-2); }
+
+.ft-bot{ display:flex; align-items:center; justify-content:space-between; gap:var(--s-4); flex-wrap:wrap; }
+
+.drawer-foot{ margin-top:auto; display:grid; gap:var(--s-4); }
+.drawer-foot .btn{ margin-top:0; }
+.social-drawer{ justify-content:center; }
+.social-drawer a{ width:52px; height:52px; }
+.social-drawer svg{ width:22px; height:22px; }

@@ -346,6 +346,10 @@
     'Respondemos en menos de 24 horas hábiles.': 'We reply within 24 business hours.',
     'AutFlow · Desde Colombia para Latinoamérica.': 'AutFlow · From Colombia to the Americas.',
     'Pie de página': 'Footer',
+    'Redes sociales': 'Social media',
+    'Instagram de AutFlow': 'AutFlow on Instagram',
+    'LinkedIn de AutFlow': 'AutFlow on LinkedIn',
+    'WhatsApp de AutFlow': 'AutFlow on WhatsApp',
 
     /* ---------- Mensajes de WhatsApp ---------- */
     'Hola AutFlow, quiero hablar sobre {topic}. Mi principal problema es: ': 'Hi AutFlow, I would like to talk about {topic}. My main problem is: ',
