@@ -9,14 +9,13 @@ Hay que abrirla desde un servidor web (con doble clic, el navegador puede
 bloquear el brazo 3D):
 
 - En tu PC: VS Code con la extensión Live Server, o `python3 -m http.server`
-  en esta carpeta y entrar a http://localhost:8000/landing-autflow.html
+  en esta carpeta y entrar a http://localhost:8000
 - En un servidor: copiar la carpeta a la carpeta web de Apache o nginx
-  (por ejemplo `/var/www/autflow`). Si se quiere que abra en la raíz del
-  dominio, renombrar `landing-autflow.html` a `index.html`.
+  (por ejemplo `/var/www/autflow`).
 
 ## Estructura
 
-- `landing-autflow.html` — la página
+- `index.html` — la página
 - `css/styles.css` — estilos
 - `js/main.js` — cotizador, menú, slides y WhatsApp
 - `js/i18n.js` — traducción español / inglés
